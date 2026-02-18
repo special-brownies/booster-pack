@@ -73,7 +73,6 @@ export function useRevealController({ totalCards, mode, autoDelayMs, onAllReveal
   useEffect(() => {
     if (mode !== "auto") return;
     if (state.phase !== "idle" && state.phase !== "waiting") return;
-    if (state.phase === "completed") return;
     const timer = window.setTimeout(() => {
       revealNext();
     }, autoDelayMs);
