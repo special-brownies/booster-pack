@@ -6,7 +6,9 @@ Backend API:
 
 1. `cd ..` (repo root)
 2. `python -m pip install -r requirements-api.txt`
-3. (optional) `set CARD_DATASET_BASE_PATH=E:\Misc\project\pokemon_series`
+3. (optional) set dataset location:
+   - PowerShell: `$env:DATASET_PATH = (Join-Path (Get-Location) "pokemon_series")`
+   - bash/zsh: `export DATASET_PATH="$(pwd)/pokemon_series"`
 4. `python -m uvicorn api_server:app --host 0.0.0.0 --port 8000 --reload`
 
 Frontend:

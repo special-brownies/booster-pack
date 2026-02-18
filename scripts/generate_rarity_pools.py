@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -13,13 +14,20 @@ from typing import Any
 PACK_TEMPLATE = {"rare_or_holo": 1, "uncommon": 3, "common": 5}
 
 
+def _default_dataset_dir() -> Path:
+    configured = os.getenv("DATASET_PATH")
+    if configured and configured.strip():
+        return Path(configured).expanduser().resolve()
+    return (Path.cwd() / "pokemon_series").resolve()
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Generate rarity pool files per set from local card JSON metadata."
     )
     parser.add_argument(
         "--input-dir",
-        default="pokemon_series",
+        default=_default_dataset_dir(),
         type=Path,
         help="Directory containing one folder per set with card JSON files.",
     )
@@ -93,7 +101,7 @@ def build_set_pool(set_dir: Path, output_dir: Path, verbose: bool) -> dict[str, 
     output_data: dict[str, Any] = {
         "set_id": set_dir.name,
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
-        "source_dir": str(Path("pokemon_series") / set_dir.name).replace("\\", "/"),
+        "source_dir": str(set_dir).replace("\\", "/"),
         "assumptions": {
             "holo_rule": "variant_details.holo == true, else rarity text contains 'holo'",
             "include_categories": "all",

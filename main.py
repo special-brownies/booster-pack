@@ -1,11 +1,12 @@
 import asyncio
 import json
+import os
 import requests
 from pathlib import Path
 from tqdm import tqdm
 from tcgdexsdk import TCGdex
 
-OUTPUT_DIR = Path("pokemon_series")
+OUTPUT_DIR = Path(os.getenv("DATASET_PATH", str(Path.cwd() / "pokemon_series"))).expanduser().resolve()
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 TARGET_SETS = [

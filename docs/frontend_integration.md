@@ -143,8 +143,8 @@ Card image source:
 - Frontend renders local dataset images through backend endpoint:
   - `GET /cards/{setId}/{cardId}.png`
 - Backend resolves paths from:
-  - default `E:\Misc\project\pokemon_series\<setId>\<cardId>.png`
-  - configurable via `CARD_DATASET_BASE_PATH`
+  - `DATASET_PATH` when defined
+  - otherwise `path.join(process.cwd(), "pokemon_series")`
 
 Pokemon details resolver:
 - `frontend/lib/services/pokemon-details-resolver.ts`

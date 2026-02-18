@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 import random
 from dataclasses import asdict, dataclass
 from pathlib import Path
@@ -12,6 +13,13 @@ from typing import Any
 
 LOGGER = logging.getLogger(__name__)
 PACK_SIZE = 10
+
+
+def _resolve_default_metadata_dir() -> Path:
+    configured = os.getenv("DATASET_PATH")
+    if configured and configured.strip():
+        return Path(configured).expanduser().resolve()
+    return (Path.cwd() / "pokemon_series").resolve()
 
 
 @dataclass(frozen=True)
@@ -145,7 +153,7 @@ def open_pack(
     binder_state: Any = None,
     seed: int | None = None,
     pools_dir: str | Path = "pools",
-    metadata_dir: str | Path = "pokemon_series",
+    metadata_dir: str | Path | None = None,
 ) -> dict[str, Any]:
     """Open a simulated booster pack and return a JSON-serializable result."""
 
@@ -156,7 +164,7 @@ def open_pack(
     final_config.validate()
 
     pools_path = Path(pools_dir)
-    metadata_path = Path(metadata_dir)
+    metadata_path = Path(metadata_dir) if metadata_dir is not None else _resolve_default_metadata_dir()
     pools = _load_pool(set_id=set_id, pools_dir=pools_path)
     owned_cards = _normalize_binder_state(binder_state, set_id=set_id)
     rng = random.Random(seed)

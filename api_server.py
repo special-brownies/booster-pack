@@ -29,11 +29,16 @@ LOGGER = logging.getLogger("api_server")
 POOLS_DIR = Path("pools")
 DATA_DIR = Path("data")
 DATA_DIR.mkdir(parents=True, exist_ok=True)
-DATASET_BASE_PATH = Path(
-    os.getenv("CARD_DATASET_BASE_PATH", r"E:\Misc\project\pokemon_series")
-)
-if not DATASET_BASE_PATH.exists():
-    DATASET_BASE_PATH = Path("pokemon_series")
+
+
+def _resolve_dataset_base_path() -> Path:
+    configured = os.getenv("DATASET_PATH")
+    if configured and configured.strip():
+        return Path(configured).expanduser().resolve()
+    return (Path.cwd() / "pokemon_series").resolve()
+
+
+DATASET_BASE_PATH = _resolve_dataset_base_path()
 
 app = FastAPI(title="Pokemon TCG Pack Simulator API", version="1.0.0")
 app.add_middleware(
