@@ -43,11 +43,12 @@ DATASET_BASE_PATH = _resolve_dataset_base_path()
 app = FastAPI(title="Pokemon TCG Pack Simulator API", version="1.0.0")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],
+    allow_origins=["*"],  # allow all origins
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 _binder_lock = threading.Lock()
 _binder_service = create_default_binder_service(
