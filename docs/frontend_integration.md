@@ -141,7 +141,7 @@ For future systems:
 
 Card image source:
 - Frontend renders local dataset images through backend endpoint:
-  - `GET /cards/{setId}/{cardId}.png`
+  - `GET /api/cards/{setId}/{cardId}.png`
 - Backend resolves paths from:
   - `DATASET_PATH` when defined
   - otherwise `path.join(process.cwd(), "pokemon_series")`

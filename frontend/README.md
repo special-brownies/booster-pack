@@ -22,7 +22,7 @@ Recommended `.env.local`:
 
 ```env
 BACKEND_API_BASE_URL=http://localhost:8000
-NEXT_PUBLIC_CARD_IMAGE_BASE_URL=http://localhost:8000/cards
+NEXT_PUBLIC_CARD_IMAGE_BASE_URL=http://localhost:8000/api/cards
 NEXT_PUBLIC_AUTO_REVEAL_DELAY_MS=700
 ```
 
@@ -36,6 +36,6 @@ NEXT_PUBLIC_AUTO_REVEAL_DELAY_MS=700
 - `GET /binder-state`
 - `GET /set-catalog?setId=...`
 - `GET /card-metadata?setId=...&cardId=...`
-- `GET /cards/:setId/:cardId.png`
+- `GET /api/cards/:setId/:cardId.png`
 
 The app calls these via `frontend/lib/api/client.ts`.
