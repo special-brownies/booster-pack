@@ -162,35 +162,45 @@ def _parse_weaknesses(raw_weaknesses: Any) -> list[str]:
     return out
 
 
+# ✅ FIXED FUNCTION (null-safe)
 def _read_card_metadata(set_id: str, card_id: str) -> CardMetadataResponse:
     json_path = _resolve_card_json_path(set_id=set_id, card_id=card_id)
     if not json_path.exists():
         raise HTTPException(status_code=404, detail="Card metadata not found")
 
     raw = json.loads(json_path.read_text(encoding="utf-8"))
+
     dex_raw = raw.get("dexId")
-    dex_id = dex_raw[0] if isinstance(dex_raw, list) and dex_raw else dex_raw
+    dex_id: int | None = None
+    if isinstance(dex_raw, list) and dex_raw:
+        if isinstance(dex_raw[0], int):
+            dex_id = dex_raw[0]
+    elif isinstance(dex_raw, int):
+        dex_id = dex_raw
+
+    raw_types = raw.get("types")
+    safe_types = raw_types if isinstance(raw_types, list) else []
+
+    raw_weaknesses = raw.get("weaknesses")
+    safe_weaknesses = _parse_weaknesses(raw_weaknesses) if raw_weaknesses else []
 
     return CardMetadataResponse(
         set_id=set_id,
         card_id=card_id,
-        name=raw.get("name"),
-        category=raw.get("category"),
-        dex_id=dex_id if isinstance(dex_id, int) else None,
-        description=raw.get("description"),
-        types=[x for x in raw.get("types", []) if isinstance(x, str)],
-        weaknesses=_parse_weaknesses(raw.get("weaknesses")),
-        rarity=raw.get("rarity"),
+        name=raw.get("name") if isinstance(raw.get("name"), str) else None,
+        category=raw.get("category") if isinstance(raw.get("category"), str) else None,
+        dex_id=dex_id,
+        description=raw.get("description") if isinstance(raw.get("description"), str) else None,
+        types=[x for x in safe_types if isinstance(x, str)],
+        weaknesses=safe_weaknesses,
+        rarity=raw.get("rarity") if isinstance(raw.get("rarity"), str) else None,
     )
 
 
-# 🔹 HEALTH (no prefix)
 @app.get("/health")
 def health() -> dict[str, str]:
     return {"status": "ok"}
 
-
-# 🔹 API ROUTES
 
 @api.post("/open-pack")
 def open_pack_endpoint(payload: OpenPackRequest):
@@ -240,5 +250,4 @@ def get_card_image(set_id: str, card_id: str):
     return FileResponse(str(image_path), media_type="image/png")
 
 
-# 🔹 register router
 app.include_router(api)
