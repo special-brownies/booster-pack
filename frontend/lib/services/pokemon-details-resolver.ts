@@ -66,7 +66,10 @@ async function normalizeApiDetails(apiPokemon: any): Promise<ResolvedPokemonDeta
     .map((x: any) => x?.type?.name)
     .filter((x: unknown): x is string => typeof x === "string");
 
-  const typeDocs = await Promise.all(types.map((typeName) => pokedex.getTypeByName(typeName)));
+  const typeDocs = await Promise.all(
+  types.map((typeName: string) => pokedex.getTypeByName(typeName))
+);
+
   const weaknessSet = new Set<string>();
   for (const doc of typeDocs) {
     const list = doc?.damage_relations?.double_damage_from ?? [];
