@@ -64,23 +64,27 @@ async function fetchWithRetry<T>(
       });
 
       if (!response.ok) {
-        const payload = await parseJsonSafe(response);
-        const msg =
-          (payload &&
-            typeof payload === "object" &&
-            "error" in payload &&
-            typeof payload.error === "string" &&
-            payload.error) ||
-          `Request failed (${response.status})`;
+  const payload = await parseJsonSafe(response);
 
-        const error = new ApiError(msg, response.status, payload);
-        if (RETRYABLE_STATUS.has(response.status) && attempt < retries) {
-          await sleep(250 * Math.pow(2, attempt));
-          attempt += 1;
-          continue;
-        }
-        throw error;
-      }
+  const msg =
+    payload &&
+    typeof payload === "object" &&
+    "error" in payload &&
+    typeof (payload as any).error === "string"
+      ? (payload as any).error
+      : `Request failed (${response.status})`;
+
+  const error = new ApiError(String(msg), response.status, payload);
+
+  if (RETRYABLE_STATUS.has(response.status) && attempt < retries) {
+    await sleep(250 * Math.pow(2, attempt));
+    attempt += 1;
+    continue;
+  }
+
+  throw error;
+}
+
 
       const data = (await response.json()) as T;
       return data;
