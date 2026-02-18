@@ -1,0 +1,48 @@
+{
+  "illustrator": "Mitsuhiro Arita",
+  "rarity": "Uncommon",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=True, reverse=False, holo=False, firstEdition=True, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x00000202C2436120>, id='base3', name='Fossil', logo='https://assets.tcgdex.net/en/base/base3/logo', symbol='https://assets.tcgdex.net/univ/base/base3/symbol', cardCount=SetCardCountResume(total=62, official=62))",
+  "dexId": [
+    92
+  ],
+  "hp": 50,
+  "types": [
+    "Psychic"
+  ],
+  "evolveFrom": null,
+  "description": null,
+  "level": null,
+  "stage": "Basic",
+  "suffix": null,
+  "item": null,
+  "abilities": null,
+  "attacks": [
+    "CardAttack(name='Lick', cost=['Psychic'], effect='Flip a coin. If heads, the Defending Pok\u00e9mon is now Paralyzed.', damage=10)",
+    "CardAttack(name='Energy Conversion', cost=['Psychic', 'Psychic'], effect='Put up to 2 Energy cards from your discard pile into your hand. Gastly does 10 damage to itself.', damage=None)"
+  ],
+  "weaknesses": null,
+  "resistances": [
+    "CardWeakRes(type='Fighting', value='-30')"
+  ],
+  "retreat": null,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base3-33",
+  "localId": "33",
+  "name": "Gastly",
+  "image": "https://assets.tcgdex.net/en/base/base3/33",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x00000202C2436120>",
+  "variant_details": {
+    "normal": true,
+    "reverse": false,
+    "holo": false,
+    "firstEdition": true,
+    "wPromo": false
+  }
+}

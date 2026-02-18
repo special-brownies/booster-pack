@@ -1,0 +1,48 @@
+{
+  "illustrator": "Shin-ichi Yoshida",
+  "rarity": "Rare",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=False, reverse=False, holo=True, firstEdition=True, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>, id='base5', name='Team Rocket', logo='https://assets.tcgdex.net/en/base/base5/logo', symbol='https://assets.tcgdex.net/univ/base/base5/symbol', cardCount=SetCardCountResume(total=83, official=82))",
+  "dexId": [
+    110
+  ],
+  "hp": 60,
+  "types": [
+    "Grass"
+  ],
+  "evolveFrom": "Koffing",
+  "description": null,
+  "level": null,
+  "stage": "Stage1",
+  "suffix": null,
+  "item": null,
+  "abilities": null,
+  "attacks": [
+    "CardAttack(name='Mass Explosion', cost=['Grass', 'Colorless'], effect=\"Does 20 damage times the total number of Koffings, Weezings, and Dark Weezings in play (Apply Weakness and Resistance.). Then, this attack does 20 damage to each Koffing, Weezing, and Dark Weezing (even your own). Don't apply Weakness and Resistance.\", damage='20x')",
+    "CardAttack(name='Stun Gas', cost=['Grass', 'Grass', 'Grass'], effect='Flip a coin. If heads, the Defending Pok\u00e9mon is now Poisoned; if tails, the Defending Pok\u00e9mon is now Paralyzed.', damage=20)"
+  ],
+  "weaknesses": [
+    "CardWeakRes(type='Psychic', value='\u00d72')"
+  ],
+  "resistances": null,
+  "retreat": null,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base5-14",
+  "localId": "14",
+  "name": "Dark Weezing",
+  "image": "https://assets.tcgdex.net/en/base/base5/14",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>",
+  "variant_details": {
+    "normal": false,
+    "reverse": false,
+    "holo": true,
+    "firstEdition": true,
+    "wPromo": false
+  }
+}

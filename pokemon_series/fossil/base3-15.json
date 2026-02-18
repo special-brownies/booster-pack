@@ -1,0 +1,47 @@
+{
+  "illustrator": "Mitsuhiro Arita",
+  "rarity": "Rare",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=False, reverse=False, holo=True, firstEdition=True, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x00000202C2436120>, id='base3', name='Fossil', logo='https://assets.tcgdex.net/en/base/base3/logo', symbol='https://assets.tcgdex.net/univ/base/base3/symbol', cardCount=SetCardCountResume(total=62, official=62))",
+  "dexId": [
+    145
+  ],
+  "hp": 80,
+  "types": [
+    "Lightning"
+  ],
+  "evolveFrom": null,
+  "description": null,
+  "level": null,
+  "stage": "Basic",
+  "suffix": null,
+  "item": null,
+  "abilities": null,
+  "attacks": [
+    "CardAttack(name='Thunderstorm', cost=['Lightning', 'Lightning', 'Lightning', 'Lightning'], effect=\"For each of your opponent's Benched Pok\u00e9mon, flip a coin. If heads, this attack does 20 damage to that Pok\u00e9mon. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.) Then, Zapdos does 10 damage times the number of tails to itself.\", damage=40)"
+  ],
+  "weaknesses": null,
+  "resistances": [
+    "CardWeakRes(type='Fighting', value='-30')"
+  ],
+  "retreat": null,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base3-15",
+  "localId": "15",
+  "name": "Zapdos",
+  "image": "https://assets.tcgdex.net/en/base/base3/15",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x00000202C2436120>",
+  "variant_details": {
+    "normal": false,
+    "reverse": false,
+    "holo": true,
+    "firstEdition": true,
+    "wPromo": false
+  }
+}

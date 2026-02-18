@@ -1,0 +1,48 @@
+{
+  "illustrator": "Miki Tanaka",
+  "rarity": "Common",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=True, reverse=False, holo=False, firstEdition=True, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x00000202C2436120>, id='base3', name='Fossil', logo='https://assets.tcgdex.net/en/base/base3/logo', symbol='https://assets.tcgdex.net/univ/base/base3/symbol', cardCount=SetCardCountResume(total=62, official=62))",
+  "dexId": [
+    79
+  ],
+  "hp": 50,
+  "types": [
+    "Psychic"
+  ],
+  "evolveFrom": null,
+  "description": null,
+  "level": null,
+  "stage": "Basic",
+  "suffix": null,
+  "item": null,
+  "abilities": null,
+  "attacks": [
+    "CardAttack(name='Spacing Out', cost=['Colorless'], effect=\"Flip a coin. If heads, remove a damage counter from Slowpoke. This attack can't be used if Slowpoke has no damage counters on it.\", damage=None)",
+    "CardAttack(name='Scavenge', cost=['Psychic', 'Psychic'], effect='Discard 1 Energy card attached to Slowpoke in order to use this attack. Put a Trainer card from your discard pile into your hand.', damage=None)"
+  ],
+  "weaknesses": [
+    "CardWeakRes(type='Psychic', value='\u00d72')"
+  ],
+  "resistances": null,
+  "retreat": null,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base3-55",
+  "localId": "55",
+  "name": "Slowpoke",
+  "image": "https://assets.tcgdex.net/en/base/base3/55",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x00000202C2436120>",
+  "variant_details": {
+    "normal": true,
+    "reverse": false,
+    "holo": false,
+    "firstEdition": true,
+    "wPromo": false
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "illustrator": "Kagemaru Himeno",
+  "rarity": "Uncommon",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=True, reverse=False, holo=False, firstEdition=True, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>, id='base3', name='Fossil', logo='https://assets.tcgdex.net/en/base/base3/logo', symbol='https://assets.tcgdex.net/univ/base/base3/symbol', cardCount=SetCardCountResume(total=62, official=62))",
+  "dexId": [
+    42
+  ],
+  "hp": 60,
+  "types": [
+    "Grass"
+  ],
+  "evolveFrom": "Zubat",
+  "description": null,
+  "level": null,
+  "stage": "Stage1",
+  "suffix": null,
+  "item": null,
+  "abilities": null,
+  "attacks": [
+    "CardAttack(name='Wing Attack', cost=['Colorless', 'Colorless', 'Colorless'], effect=None, damage=30)",
+    "CardAttack(name='Leech Life', cost=['Grass', 'Grass', 'Colorless'], effect='Remove a number of damage counters from Golbat equal to the damage done to the Defending Pok\u00e9mon (after applying Weakness and Resistance). If Golbat has fewer damage counters than that, remove all of them.', damage=20)"
+  ],
+  "weaknesses": [
+    "CardWeakRes(type='Psychic', value='\u00d72')"
+  ],
+  "resistances": [
+    "CardWeakRes(type='Fighting', value='-30')"
+  ],
+  "retreat": null,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base3-34",
+  "localId": "34",
+  "name": "Golbat",
+  "image": "https://assets.tcgdex.net/en/base/base3/34",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>",
+  "variant_details": {
+    "normal": true,
+    "reverse": false,
+    "holo": false,
+    "firstEdition": true,
+    "wPromo": false
+  }
+}

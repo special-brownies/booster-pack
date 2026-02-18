@@ -1,0 +1,48 @@
+{
+  "illustrator": "Mitsuhiro Arita",
+  "rarity": "Common",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=True, reverse=False, holo=False, firstEdition=False, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>, id='base4', name='Base Set 2', logo='https://assets.tcgdex.net/en/base/base4/logo', symbol='https://assets.tcgdex.net/univ/base/base4/symbol', cardCount=SetCardCountResume(total=130, official=130))",
+  "dexId": [
+    48
+  ],
+  "hp": 40,
+  "types": [
+    "Grass"
+  ],
+  "evolveFrom": null,
+  "description": null,
+  "level": null,
+  "stage": "Basic",
+  "suffix": null,
+  "item": null,
+  "abilities": null,
+  "attacks": [
+    "CardAttack(name='Stun Spore', cost=['Grass'], effect='Flip a coin. If heads, the Defending Pok\u00e9mon is now Paralyzed.', damage=10)",
+    "CardAttack(name='Leech Life', cost=['Grass', 'Colorless'], effect='Remove a number of damage counters from Venonat equal to the damage done to the Defending Pok\u00e9mon (after applying Weakness and Resistance).', damage=10)"
+  ],
+  "weaknesses": [
+    "CardWeakRes(type='Fire', value='\u00d72')"
+  ],
+  "resistances": null,
+  "retreat": null,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base4-97",
+  "localId": "97",
+  "name": "Venonat",
+  "image": "https://assets.tcgdex.net/en/base/base4/97",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>",
+  "variant_details": {
+    "normal": true,
+    "reverse": false,
+    "holo": false,
+    "firstEdition": false,
+    "wPromo": false
+  }
+}

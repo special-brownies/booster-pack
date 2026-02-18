@@ -1,0 +1,49 @@
+{
+  "illustrator": "Mitsuhiro Arita",
+  "rarity": "Rare",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=True, reverse=False, holo=False, firstEdition=True, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>, id='base3', name='Fossil', logo='https://assets.tcgdex.net/en/base/base3/logo', symbol='https://assets.tcgdex.net/univ/base/base3/symbol', cardCount=SetCardCountResume(total=62, official=62))",
+  "dexId": [
+    89
+  ],
+  "hp": 70,
+  "types": [
+    "Grass"
+  ],
+  "evolveFrom": "Grimer",
+  "description": null,
+  "level": null,
+  "stage": "Stage1",
+  "suffix": null,
+  "item": null,
+  "abilities": [
+    "CardAbility(type='Pokemon Power', name='Toxic Gas', effect='Ignore all Pok\u00e9mon Powers other than Toxic Gases. This power stops working while Muk is Asleep, Confused, or Paralyzed.')"
+  ],
+  "attacks": [
+    "CardAttack(name='Sludge', cost=['Grass', 'Grass', 'Grass'], effect='Flip a coin. If heads, the Defending Pok\u00e9mon is now Poisoned.', damage=30)"
+  ],
+  "weaknesses": [
+    "CardWeakRes(type='Psychic', value='\u00d72')"
+  ],
+  "resistances": null,
+  "retreat": null,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base3-28",
+  "localId": "28",
+  "name": "Muk",
+  "image": "https://assets.tcgdex.net/en/base/base3/28",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>",
+  "variant_details": {
+    "normal": true,
+    "reverse": false,
+    "holo": false,
+    "firstEdition": true,
+    "wPromo": false
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "illustrator": "Kagemaru Himeno",
+  "rarity": "Uncommon",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=True, reverse=False, holo=False, firstEdition=True, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x00000202C2436120>, id='base3', name='Fossil', logo='https://assets.tcgdex.net/en/base/base3/logo', symbol='https://assets.tcgdex.net/univ/base/base3/symbol', cardCount=SetCardCountResume(total=62, official=62))",
+  "dexId": [
+    76
+  ],
+  "hp": 80,
+  "types": [
+    "Fighting"
+  ],
+  "evolveFrom": "Graveler",
+  "description": null,
+  "level": null,
+  "stage": "Stage2",
+  "suffix": null,
+  "item": null,
+  "abilities": null,
+  "attacks": [
+    "CardAttack(name='Avalanche', cost=['Fighting', 'Fighting', 'Fighting', 'Colorless'], effect=None, damage=60)",
+    "CardAttack(name='Selfdestruct', cost=['Fighting', 'Fighting', 'Fighting', 'Fighting'], effect=\"Does 20 damage to each Pok\u00e9mon on each player's Bench. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.) Golem does 100 damage to itself.\", damage=100)"
+  ],
+  "weaknesses": [
+    "CardWeakRes(type='Grass', value='\u00d72')"
+  ],
+  "resistances": null,
+  "retreat": null,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base3-36",
+  "localId": "36",
+  "name": "Golem",
+  "image": "https://assets.tcgdex.net/en/base/base3/36",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x00000202C2436120>",
+  "variant_details": {
+    "normal": true,
+    "reverse": false,
+    "holo": false,
+    "firstEdition": true,
+    "wPromo": false
+  }
+}

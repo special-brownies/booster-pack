@@ -1,0 +1,48 @@
+{
+  "illustrator": "Ken Sugimori",
+  "rarity": "Rare",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=True, reverse=False, holo=False, firstEdition=True, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x00000202C2436120>, id='base3', name='Fossil', logo='https://assets.tcgdex.net/en/base/base3/logo', symbol='https://assets.tcgdex.net/univ/base/base3/symbol', cardCount=SetCardCountResume(total=62, official=62))",
+  "dexId": [
+    97
+  ],
+  "hp": 90,
+  "types": [
+    "Psychic"
+  ],
+  "evolveFrom": "Drowzee",
+  "description": null,
+  "level": null,
+  "stage": "Stage1",
+  "suffix": null,
+  "item": null,
+  "abilities": null,
+  "attacks": [
+    "CardAttack(name='Prophecy', cost=['Psychic'], effect=\"Look at up to 3 cards from the top of either player's deck and rearrange them as you like.\", damage=None)",
+    "CardAttack(name='Dark Mind', cost=['Psychic', 'Psychic', 'Psychic'], effect=\"If your opponent has any Benched Pok\u00e9mon, choose 1 of them and this attack does 10 damage to it. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)\", damage=30)"
+  ],
+  "weaknesses": [
+    "CardWeakRes(type='Psychic', value='\u00d72')"
+  ],
+  "resistances": null,
+  "retreat": null,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base3-23",
+  "localId": "23",
+  "name": "Hypno",
+  "image": "https://assets.tcgdex.net/en/base/base3/23",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x00000202C2436120>",
+  "variant_details": {
+    "normal": true,
+    "reverse": false,
+    "holo": false,
+    "firstEdition": true,
+    "wPromo": false
+  }
+}

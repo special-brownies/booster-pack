@@ -1,0 +1,48 @@
+{
+  "illustrator": "Mitsuhiro Arita",
+  "rarity": "Uncommon",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=True, reverse=False, holo=False, firstEdition=True, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>, id='base3', name='Fossil', logo='https://assets.tcgdex.net/en/base/base3/logo', symbol='https://assets.tcgdex.net/univ/base/base3/symbol', cardCount=SetCardCountResume(total=62, official=62))",
+  "dexId": [
+    110
+  ],
+  "hp": 60,
+  "types": [
+    "Grass"
+  ],
+  "evolveFrom": "Koffing",
+  "description": null,
+  "level": null,
+  "stage": "Stage1",
+  "suffix": null,
+  "item": null,
+  "abilities": null,
+  "attacks": [
+    "CardAttack(name='Smog', cost=['Grass', 'Grass'], effect='Flip a coin. If heads, the Defending Pok\u00e9mon is now Poisoned.', damage=20)",
+    "CardAttack(name='Selfdestruct', cost=['Grass', 'Grass', 'Colorless'], effect=\"Does 10 damage to each Pok\u00e9mon on each player's Bench. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.) Weezing does 60 damage to itself.\", damage=60)"
+  ],
+  "weaknesses": [
+    "CardWeakRes(type='Psychic', value='\u00d72')"
+  ],
+  "resistances": null,
+  "retreat": null,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base3-45",
+  "localId": "45",
+  "name": "Weezing",
+  "image": "https://assets.tcgdex.net/en/base/base3/45",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>",
+  "variant_details": {
+    "normal": true,
+    "reverse": false,
+    "holo": false,
+    "firstEdition": true,
+    "wPromo": false
+  }
+}

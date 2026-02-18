@@ -1,0 +1,50 @@
+{
+  "illustrator": "Shin-ichi Yoshida",
+  "rarity": "Uncommon",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=True, reverse=False, holo=False, firstEdition=True, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>, id='base5', name='Team Rocket', logo='https://assets.tcgdex.net/en/base/base5/logo', symbol='https://assets.tcgdex.net/univ/base/base5/symbol', cardCount=SetCardCountResume(total=83, official=82))",
+  "dexId": [
+    53
+  ],
+  "hp": 60,
+  "types": [
+    "Colorless"
+  ],
+  "evolveFrom": "Meowth",
+  "description": null,
+  "level": null,
+  "stage": "Stage1",
+  "suffix": null,
+  "item": null,
+  "abilities": null,
+  "attacks": [
+    "CardAttack(name='Fascinate', cost=['Colorless'], effect=\"Flip a coin. If heads, choose 1 of your opponent's Benched Pok\u00e9mon and switch it with the Defending Pok\u00e9mon. This attack can't be used if your opponent has no Benched Pok\u00e9mon.\", damage=None)",
+    "CardAttack(name='Poison Claws', cost=['Colorless', 'Colorless'], effect='Flip a coin. If heads, the Defending Pok\u00e9mon is now Poisoned.', damage=10)"
+  ],
+  "weaknesses": [
+    "CardWeakRes(type='Fighting', value='\u00d72')"
+  ],
+  "resistances": [
+    "CardWeakRes(type='Psychic', value='-30')"
+  ],
+  "retreat": null,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base5-42",
+  "localId": "42",
+  "name": "Dark Persian",
+  "image": "https://assets.tcgdex.net/en/base/base5/42",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>",
+  "variant_details": {
+    "normal": true,
+    "reverse": false,
+    "holo": false,
+    "firstEdition": true,
+    "wPromo": false
+  }
+}

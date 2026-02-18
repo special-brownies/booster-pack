@@ -1,0 +1,48 @@
+{
+  "illustrator": "Miki Tanaka",
+  "rarity": "Rare",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=False, reverse=False, holo=True, firstEdition=True, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>, id='base5', name='Team Rocket', logo='https://assets.tcgdex.net/en/base/base5/logo', symbol='https://assets.tcgdex.net/univ/base/base5/symbol', cardCount=SetCardCountResume(total=83, official=82))",
+  "dexId": [
+    82
+  ],
+  "hp": 60,
+  "types": [
+    "Lightning"
+  ],
+  "evolveFrom": "Magnemite",
+  "description": null,
+  "level": null,
+  "stage": "Stage1",
+  "suffix": null,
+  "item": null,
+  "abilities": null,
+  "attacks": [
+    "CardAttack(name='Sonicboom', cost=['Grass', 'Grass', 'Colorless', 'Colorless'], effect=\"Don't apply Weakness and Resistance for this attack. (Any other effects that would happen after applying Weakness and Resistance still happen.)\", damage=40)",
+    "CardAttack(name='Magnetic Lines', cost=['Lightning', 'Lightning'], effect='If the Defending Pok\u00e9mon has any basic Energy cards attached to it, choose 1 of them. If your opponent has any Benched Pok\u00e9mon, choose 1 of them and attach that Energy card to it.', damage=30)"
+  ],
+  "weaknesses": [
+    "CardWeakRes(type='Fighting', value='\u00d72')"
+  ],
+  "resistances": null,
+  "retreat": null,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base5-11",
+  "localId": "11",
+  "name": "Dark Magneton",
+  "image": "https://assets.tcgdex.net/en/base/base5/11",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>",
+  "variant_details": {
+    "normal": false,
+    "reverse": false,
+    "holo": true,
+    "firstEdition": true,
+    "wPromo": false
+  }
+}

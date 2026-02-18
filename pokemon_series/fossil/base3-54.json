@@ -1,0 +1,48 @@
+{
+  "illustrator": "Mitsuhiro Arita",
+  "rarity": "Common",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=True, reverse=False, holo=False, firstEdition=True, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x00000202C2436120>, id='base3', name='Fossil', logo='https://assets.tcgdex.net/en/base/base3/logo', symbol='https://assets.tcgdex.net/univ/base/base3/symbol', cardCount=SetCardCountResume(total=62, official=62))",
+  "dexId": [
+    90
+  ],
+  "hp": 30,
+  "types": [
+    "Water"
+  ],
+  "evolveFrom": null,
+  "description": null,
+  "level": null,
+  "stage": "Basic",
+  "suffix": null,
+  "item": null,
+  "abilities": null,
+  "attacks": [
+    "CardAttack(name='Supersonic', cost=['Water'], effect='Flip a coin. If heads, the Defending Pok\u00e9mon is now Confused.', damage=None)",
+    "CardAttack(name='Hide in Shell', cost=['Water'], effect=\"Flip a coin. If heads, prevent all damage done to Shellder during your opponent's next turn. (Any other effects of attacks still happen.)\", damage=None)"
+  ],
+  "weaknesses": [
+    "CardWeakRes(type='Lightning', value='\u00d72')"
+  ],
+  "resistances": null,
+  "retreat": null,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base3-54",
+  "localId": "54",
+  "name": "Shellder",
+  "image": "https://assets.tcgdex.net/en/base/base3/54",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x00000202C2436120>",
+  "variant_details": {
+    "normal": true,
+    "reverse": false,
+    "holo": false,
+    "firstEdition": true,
+    "wPromo": false
+  }
+}

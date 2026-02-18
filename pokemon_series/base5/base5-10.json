@@ -1,0 +1,48 @@
+{
+  "illustrator": "Mitsuhiro Arita",
+  "rarity": "Rare",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=False, reverse=False, holo=True, firstEdition=True, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>, id='base5', name='Team Rocket', logo='https://assets.tcgdex.net/en/base/base5/logo', symbol='https://assets.tcgdex.net/univ/base/base5/symbol', cardCount=SetCardCountResume(total=83, official=82))",
+  "dexId": [
+    68
+  ],
+  "hp": 70,
+  "types": [
+    "Fighting"
+  ],
+  "evolveFrom": "Machoke",
+  "description": null,
+  "level": null,
+  "stage": "Stage2",
+  "suffix": null,
+  "item": null,
+  "abilities": null,
+  "attacks": [
+    "CardAttack(name='Mega Punch', cost=['Fighting', 'Fighting'], effect=None, damage=30)",
+    "CardAttack(name='Fling', cost=['Fighting', 'Fighting', 'Fighting', 'Colorless'], effect=\"Your opponent shuffles his or her Active Pok\u00e9mon and all cards attached to it into his or her deck. This attack can't be used if your opponent has no Benched Pok\u00e9mon.\", damage=None)"
+  ],
+  "weaknesses": [
+    "CardWeakRes(type='Psychic', value='\u00d72')"
+  ],
+  "resistances": null,
+  "retreat": null,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base5-10",
+  "localId": "10",
+  "name": "Dark Machamp",
+  "image": "https://assets.tcgdex.net/en/base/base5/10",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>",
+  "variant_details": {
+    "normal": false,
+    "reverse": false,
+    "holo": true,
+    "firstEdition": true,
+    "wPromo": false
+  }
+}

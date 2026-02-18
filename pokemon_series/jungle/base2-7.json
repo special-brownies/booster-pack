@@ -1,0 +1,48 @@
+{
+  "illustrator": "Ken Sugimori",
+  "rarity": "Rare",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=False, reverse=False, holo=True, firstEdition=True, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x00000202C2436120>, id='base2', name='Jungle', logo='https://assets.tcgdex.net/en/base/base2/logo', symbol='https://assets.tcgdex.net/univ/base/base2/symbol', cardCount=SetCardCountResume(total=64, official=64))",
+  "dexId": [
+    31
+  ],
+  "hp": 90,
+  "types": [
+    "Grass"
+  ],
+  "evolveFrom": "Nidorina",
+  "description": null,
+  "level": null,
+  "stage": "Stage2",
+  "suffix": null,
+  "item": null,
+  "abilities": null,
+  "attacks": [
+    "CardAttack(name='Boyfriends', cost=['Grass', 'Colorless'], effect='Does 20 damage plus 20 more damage for each Nidoking you have in play.', damage='20+')",
+    "CardAttack(name='Mega Punch', cost=['Grass', 'Grass', 'Colorless', 'Colorless'], effect=None, damage=50)"
+  ],
+  "weaknesses": [
+    "CardWeakRes(type='Psychic', value='\u00d72')"
+  ],
+  "resistances": null,
+  "retreat": null,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base2-7",
+  "localId": "7",
+  "name": "Nidoqueen",
+  "image": "https://assets.tcgdex.net/en/base/base2/7",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x00000202C2436120>",
+  "variant_details": {
+    "normal": false,
+    "reverse": false,
+    "holo": true,
+    "firstEdition": true,
+    "wPromo": false
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "illustrator": "Kagemaru Himeno",
+  "rarity": "Rare",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=False, reverse=False, holo=True, firstEdition=True, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>, id='base5', name='Team Rocket', logo='https://assets.tcgdex.net/en/base/base5/logo', symbol='https://assets.tcgdex.net/univ/base/base5/symbol', cardCount=SetCardCountResume(total=83, official=82))",
+  "dexId": [
+    130
+  ],
+  "hp": 70,
+  "types": [
+    "Water"
+  ],
+  "evolveFrom": "Magikarp",
+  "description": null,
+  "level": null,
+  "stage": "Stage1",
+  "suffix": null,
+  "item": null,
+  "abilities": [
+    "CardAbility(type='Pokemon Power', name='Final Beam', effect=\"When Dark Gyarados is Knocked Out by an attack, flip a coin. If heads, this power does 20 damage for each Water Energy attached to Dark Gyarados to the Pok\u00e9mon that Knocked Out Dark Gyarados. Apply Weakness and Resistance. This power doesn't work if Dark Gyarados is Asleep, Confused, or Paralyzed.\")"
+  ],
+  "attacks": [
+    "CardAttack(name='Ice Beam', cost=['Water', 'Water', 'Water'], effect='Flip a coin. If heads, the Defending Pok\u00e9mon is now Paralyzed.', damage=30)"
+  ],
+  "weaknesses": [
+    "CardWeakRes(type='Grass', value='\u00d72')"
+  ],
+  "resistances": [
+    "CardWeakRes(type='Fighting', value='-30')"
+  ],
+  "retreat": null,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base5-8",
+  "localId": "8",
+  "name": "Dark Gyarados",
+  "image": "https://assets.tcgdex.net/en/base/base5/8",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>",
+  "variant_details": {
+    "normal": false,
+    "reverse": false,
+    "holo": true,
+    "firstEdition": true,
+    "wPromo": false
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "illustrator": "Ken Sugimori",
+  "rarity": "Rare",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=False, reverse=False, holo=True, firstEdition=True, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>, id='base5', name='Team Rocket', logo='https://assets.tcgdex.net/en/base/base5/logo', symbol='https://assets.tcgdex.net/univ/base/base5/symbol', cardCount=SetCardCountResume(total=83, official=82))",
+  "dexId": [
+    6
+  ],
+  "hp": 80,
+  "types": [
+    "Fire"
+  ],
+  "evolveFrom": "Charmeleon",
+  "description": null,
+  "level": null,
+  "stage": "Stage2",
+  "suffix": null,
+  "item": null,
+  "abilities": null,
+  "attacks": [
+    "CardAttack(name='Nail Flick', cost=['Colorless'], effect=None, damage=10)",
+    "CardAttack(name='Continuous Fireball', cost=['Fire', 'Fire'], effect='Flip a number of coins equal to the number of Energy cards attached to Dark Charizard. This attack does 50 damage times the number of heads. Discard a number of Energy cards attached to Dark Charizard equal to the number of heads.', damage='50x')"
+  ],
+  "weaknesses": [
+    "CardWeakRes(type='Water', value='\u00d72')"
+  ],
+  "resistances": [
+    "CardWeakRes(type='Fighting', value='-30')"
+  ],
+  "retreat": 3,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base5-4",
+  "localId": "4",
+  "name": "Dark Charizard",
+  "image": "https://assets.tcgdex.net/en/base/base5/4",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>",
+  "variant_details": {
+    "normal": false,
+    "reverse": false,
+    "holo": true,
+    "firstEdition": true,
+    "wPromo": false
+  }
+}

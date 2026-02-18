@@ -1,0 +1,49 @@
+{
+  "illustrator": "Keiji Kinebuchi",
+  "rarity": "Rare",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=False, reverse=False, holo=True, firstEdition=True, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>, id='base3', name='Fossil', logo='https://assets.tcgdex.net/en/base/base3/logo', symbol='https://assets.tcgdex.net/univ/base/base3/symbol', cardCount=SetCardCountResume(total=62, official=62))",
+  "dexId": [
+    94
+  ],
+  "hp": 80,
+  "types": [
+    "Psychic"
+  ],
+  "evolveFrom": "Haunter",
+  "description": null,
+  "level": null,
+  "stage": "Stage2",
+  "suffix": null,
+  "item": null,
+  "abilities": [
+    "CardAbility(type='Pokemon Power', name='Curse', effect=\"Once during your turn (before your attack), you may move 1 damage counter from 1 of your opponent's Pok\u00e9mon to another (even if it would Knock Out the other Pok\u00e9mon). This power can't be used if Gengar is Asleep, Confused, or Paralyzed.\")"
+  ],
+  "attacks": [
+    "CardAttack(name='Dark Mind', cost=['Psychic', 'Psychic', 'Psychic'], effect=\"If your opponent has any Benched Pok\u00e9mon, choose 1 of them and this attack does 10 damage to it. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.)\", damage=30)"
+  ],
+  "weaknesses": null,
+  "resistances": [
+    "CardWeakRes(type='Fighting', value='-30')"
+  ],
+  "retreat": null,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base3-5",
+  "localId": "5",
+  "name": "Gengar",
+  "image": "https://assets.tcgdex.net/en/base/base3/5",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>",
+  "variant_details": {
+    "normal": false,
+    "reverse": false,
+    "holo": true,
+    "firstEdition": true,
+    "wPromo": false
+  }
+}

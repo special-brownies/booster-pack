@@ -1,0 +1,48 @@
+{
+  "illustrator": "Ken Sugimori",
+  "rarity": "Uncommon",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=True, reverse=False, holo=False, firstEdition=True, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>, id='base5', name='Team Rocket', logo='https://assets.tcgdex.net/en/base/base5/logo', symbol='https://assets.tcgdex.net/univ/base/base5/symbol', cardCount=SetCardCountResume(total=83, official=82))",
+  "dexId": [
+    101
+  ],
+  "hp": 60,
+  "types": [
+    "Lightning"
+  ],
+  "evolveFrom": "Voltorb",
+  "description": null,
+  "level": null,
+  "stage": "Stage1",
+  "suffix": null,
+  "item": null,
+  "abilities": null,
+  "attacks": [
+    "CardAttack(name='Rolling Tackle', cost=['Colorless'], effect=None, damage=10)",
+    "CardAttack(name='Energy Bomb', cost=['Lightning', 'Lightning'], effect='Take all Energy cards attached to Dark Electrode and attach them to your Benched Pok\u00e9mon (in any way you choose). If you have no Benched Pok\u00e9mon, discard all Energy cards attached to Dark Electrode.', damage=30)"
+  ],
+  "weaknesses": [
+    "CardWeakRes(type='Fighting', value='\u00d72')"
+  ],
+  "resistances": null,
+  "retreat": null,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base5-34",
+  "localId": "34",
+  "name": "Dark Electrode",
+  "image": "https://assets.tcgdex.net/en/base/base5/34",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>",
+  "variant_details": {
+    "normal": true,
+    "reverse": false,
+    "holo": false,
+    "firstEdition": true,
+    "wPromo": false
+  }
+}

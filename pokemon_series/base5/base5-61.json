@@ -1,0 +1,48 @@
+{
+  "illustrator": "Sumiyoshi Kizuki",
+  "rarity": "Common",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=True, reverse=False, holo=False, firstEdition=True, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>, id='base5', name='Team Rocket', logo='https://assets.tcgdex.net/en/base/base5/logo', symbol='https://assets.tcgdex.net/univ/base/base5/symbol', cardCount=SetCardCountResume(total=83, official=82))",
+  "dexId": [
+    56
+  ],
+  "hp": 40,
+  "types": [
+    "Fighting"
+  ],
+  "evolveFrom": null,
+  "description": null,
+  "level": null,
+  "stage": "Basic",
+  "suffix": null,
+  "item": null,
+  "abilities": null,
+  "attacks": [
+    "CardAttack(name='Mischief', cost=['Colorless'], effect=\"Shuffle your opponent's deck.\", damage=None)",
+    "CardAttack(name='Anger', cost=['Colorless', 'Fighting'], effect='Flip a coin. If heads, this attack does 20 damage plus 20 more damage; if tails, this attack does 20 damage.', damage='20+')"
+  ],
+  "weaknesses": [
+    "CardWeakRes(type='Psychic', value='\u00d72')"
+  ],
+  "resistances": null,
+  "retreat": null,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base5-61",
+  "localId": "61",
+  "name": "Mankey",
+  "image": "https://assets.tcgdex.net/en/base/base5/61",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>",
+  "variant_details": {
+    "normal": true,
+    "reverse": false,
+    "holo": false,
+    "firstEdition": true,
+    "wPromo": false
+  }
+}

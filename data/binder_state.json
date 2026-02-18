@@ -1,0 +1,283 @@
+{
+  "version": 1,
+  "cards": {
+    "base2::base2-11": {
+      "card_id": "base2-11",
+      "set_id": "base2",
+      "quantity_owned": 1,
+      "first_obtained_at": "2026-02-18T02:44:43.694608Z",
+      "last_obtained_at": "2026-02-18T02:44:43.694608Z",
+      "ever_new_discovery": true
+    },
+    "base2::base2-41": {
+      "card_id": "base2-41",
+      "set_id": "base2",
+      "quantity_owned": 1,
+      "first_obtained_at": "2026-02-18T02:44:43.694608Z",
+      "last_obtained_at": "2026-02-18T02:44:43.694608Z",
+      "ever_new_discovery": true
+    },
+    "base2::base2-36": {
+      "card_id": "base2-36",
+      "set_id": "base2",
+      "quantity_owned": 2,
+      "first_obtained_at": "2026-02-18T02:44:43.694608Z",
+      "last_obtained_at": "2026-02-18T03:34:32.445189Z",
+      "ever_new_discovery": true
+    },
+    "base2::base2-48": {
+      "card_id": "base2-48",
+      "set_id": "base2",
+      "quantity_owned": 1,
+      "first_obtained_at": "2026-02-18T02:44:43.694608Z",
+      "last_obtained_at": "2026-02-18T02:44:43.694608Z",
+      "ever_new_discovery": true
+    },
+    "base2::base2-63": {
+      "card_id": "base2-63",
+      "set_id": "base2",
+      "quantity_owned": 4,
+      "first_obtained_at": "2026-02-18T02:44:43.694608Z",
+      "last_obtained_at": "2026-02-18T06:54:48.729383Z",
+      "ever_new_discovery": true
+    },
+    "base2::base2-64": {
+      "card_id": "base2-64",
+      "set_id": "base2",
+      "quantity_owned": 1,
+      "first_obtained_at": "2026-02-18T02:44:43.694608Z",
+      "last_obtained_at": "2026-02-18T02:44:43.694608Z",
+      "ever_new_discovery": true
+    },
+    "base2::base2-61": {
+      "card_id": "base2-61",
+      "set_id": "base2",
+      "quantity_owned": 3,
+      "first_obtained_at": "2026-02-18T02:44:43.694608Z",
+      "last_obtained_at": "2026-02-18T03:34:32.445189Z",
+      "ever_new_discovery": true
+    },
+    "base2::base2-55": {
+      "card_id": "base2-55",
+      "set_id": "base2",
+      "quantity_owned": 1,
+      "first_obtained_at": "2026-02-18T02:44:43.694608Z",
+      "last_obtained_at": "2026-02-18T02:44:43.694608Z",
+      "ever_new_discovery": true
+    },
+    "base2::base2-52": {
+      "card_id": "base2-52",
+      "set_id": "base2",
+      "quantity_owned": 5,
+      "first_obtained_at": "2026-02-18T02:44:43.694608Z",
+      "last_obtained_at": "2026-02-18T06:54:48.729383Z",
+      "ever_new_discovery": true
+    },
+    "base2::base2-30": {
+      "card_id": "base2-30",
+      "set_id": "base2",
+      "quantity_owned": 1,
+      "first_obtained_at": "2026-02-18T02:48:18.496039Z",
+      "last_obtained_at": "2026-02-18T02:48:18.496039Z",
+      "ever_new_discovery": true
+    },
+    "base2::base2-39": {
+      "card_id": "base2-39",
+      "set_id": "base2",
+      "quantity_owned": 3,
+      "first_obtained_at": "2026-02-18T02:48:18.496039Z",
+      "last_obtained_at": "2026-02-18T03:34:32.445189Z",
+      "ever_new_discovery": true
+    },
+    "base2::base2-33": {
+      "card_id": "base2-33",
+      "set_id": "base2",
+      "quantity_owned": 2,
+      "first_obtained_at": "2026-02-18T02:48:18.496039Z",
+      "last_obtained_at": "2026-02-18T06:54:48.729383Z",
+      "ever_new_discovery": true
+    },
+    "base2::base2-45": {
+      "card_id": "base2-45",
+      "set_id": "base2",
+      "quantity_owned": 1,
+      "first_obtained_at": "2026-02-18T02:48:18.496039Z",
+      "last_obtained_at": "2026-02-18T02:48:18.496039Z",
+      "ever_new_discovery": true
+    },
+    "base2::base2-49": {
+      "card_id": "base2-49",
+      "set_id": "base2",
+      "quantity_owned": 1,
+      "first_obtained_at": "2026-02-18T02:48:18.496039Z",
+      "last_obtained_at": "2026-02-18T02:48:18.496039Z",
+      "ever_new_discovery": true
+    },
+    "base2::base2-57": {
+      "card_id": "base2-57",
+      "set_id": "base2",
+      "quantity_owned": 2,
+      "first_obtained_at": "2026-02-18T02:48:18.496039Z",
+      "last_obtained_at": "2026-02-18T03:34:32.445189Z",
+      "ever_new_discovery": true
+    },
+    "base2::base2-53": {
+      "card_id": "base2-53",
+      "set_id": "base2",
+      "quantity_owned": 1,
+      "first_obtained_at": "2026-02-18T02:48:18.496039Z",
+      "last_obtained_at": "2026-02-18T02:48:18.496039Z",
+      "ever_new_discovery": true
+    },
+    "base2::base2-17": {
+      "card_id": "base2-17",
+      "set_id": "base2",
+      "quantity_owned": 1,
+      "first_obtained_at": "2026-02-18T03:03:14.997293Z",
+      "last_obtained_at": "2026-02-18T03:03:14.997293Z",
+      "ever_new_discovery": true
+    },
+    "base2::base2-47": {
+      "card_id": "base2-47",
+      "set_id": "base2",
+      "quantity_owned": 1,
+      "first_obtained_at": "2026-02-18T03:03:14.997293Z",
+      "last_obtained_at": "2026-02-18T03:03:14.997293Z",
+      "ever_new_discovery": true
+    },
+    "base2::base2-35": {
+      "card_id": "base2-35",
+      "set_id": "base2",
+      "quantity_owned": 2,
+      "first_obtained_at": "2026-02-18T03:03:14.997293Z",
+      "last_obtained_at": "2026-02-18T03:34:32.445189Z",
+      "ever_new_discovery": true
+    },
+    "base2::base2-50": {
+      "card_id": "base2-50",
+      "set_id": "base2",
+      "quantity_owned": 2,
+      "first_obtained_at": "2026-02-18T03:03:14.997293Z",
+      "last_obtained_at": "2026-02-18T06:54:48.729383Z",
+      "ever_new_discovery": true
+    },
+    "base2::base2-62": {
+      "card_id": "base2-62",
+      "set_id": "base2",
+      "quantity_owned": 2,
+      "first_obtained_at": "2026-02-18T03:03:14.997293Z",
+      "last_obtained_at": "2026-02-18T03:03:14.997293Z",
+      "ever_new_discovery": true
+    },
+    "base2::base2-59": {
+      "card_id": "base2-59",
+      "set_id": "base2",
+      "quantity_owned": 1,
+      "first_obtained_at": "2026-02-18T03:03:14.997293Z",
+      "last_obtained_at": "2026-02-18T03:03:14.997293Z",
+      "ever_new_discovery": true
+    },
+    "base2::base2-56": {
+      "card_id": "base2-56",
+      "set_id": "base2",
+      "quantity_owned": 1,
+      "first_obtained_at": "2026-02-18T03:03:14.997293Z",
+      "last_obtained_at": "2026-02-18T03:03:14.997293Z",
+      "ever_new_discovery": true
+    },
+    "base2::base2-22": {
+      "card_id": "base2-22",
+      "set_id": "base2",
+      "quantity_owned": 1,
+      "first_obtained_at": "2026-02-18T03:34:32.445189Z",
+      "last_obtained_at": "2026-02-18T03:34:32.445189Z",
+      "ever_new_discovery": true
+    },
+    "base2::base2-51": {
+      "card_id": "base2-51",
+      "set_id": "base2",
+      "quantity_owned": 1,
+      "first_obtained_at": "2026-02-18T03:34:32.445189Z",
+      "last_obtained_at": "2026-02-18T03:34:32.445189Z",
+      "ever_new_discovery": true
+    },
+    "base2::base2-60": {
+      "card_id": "base2-60",
+      "set_id": "base2",
+      "quantity_owned": 1,
+      "first_obtained_at": "2026-02-18T03:34:32.445189Z",
+      "last_obtained_at": "2026-02-18T03:34:32.445189Z",
+      "ever_new_discovery": true
+    },
+    "base2::base2-23": {
+      "card_id": "base2-23",
+      "set_id": "base2",
+      "quantity_owned": 1,
+      "first_obtained_at": "2026-02-18T06:54:48.729383Z",
+      "last_obtained_at": "2026-02-18T06:54:48.729383Z",
+      "ever_new_discovery": true
+    },
+    "base2::base2-34": {
+      "card_id": "base2-34",
+      "set_id": "base2",
+      "quantity_owned": 1,
+      "first_obtained_at": "2026-02-18T06:54:48.729383Z",
+      "last_obtained_at": "2026-02-18T06:54:48.729383Z",
+      "ever_new_discovery": true
+    },
+    "base2::base2-38": {
+      "card_id": "base2-38",
+      "set_id": "base2",
+      "quantity_owned": 1,
+      "first_obtained_at": "2026-02-18T06:54:48.729383Z",
+      "last_obtained_at": "2026-02-18T06:54:48.729383Z",
+      "ever_new_discovery": true
+    },
+    "base2::base2-58": {
+      "card_id": "base2-58",
+      "set_id": "base2",
+      "quantity_owned": 1,
+      "first_obtained_at": "2026-02-18T06:54:48.729383Z",
+      "last_obtained_at": "2026-02-18T06:54:48.729383Z",
+      "ever_new_discovery": true
+    },
+    "base2::base2-54": {
+      "card_id": "base2-54",
+      "set_id": "base2",
+      "quantity_owned": 1,
+      "first_obtained_at": "2026-02-18T06:54:48.729383Z",
+      "last_obtained_at": "2026-02-18T06:54:48.729383Z",
+      "ever_new_discovery": true
+    }
+  },
+  "unlocked_sets": [
+    "base2"
+  ],
+  "set_milestones": {
+    "base2": [
+      25
+    ]
+  },
+  "events": [
+    {
+      "key": "INITIAL_SET_UNLOCKED:base2::",
+      "type": "INITIAL_SET_UNLOCKED",
+      "set_id": "base2",
+      "timestamp": "2026-02-18T02:44:23.903037Z",
+      "details": {
+        "reason": "first_set_in_progression"
+      }
+    },
+    {
+      "key": "SET_MILESTONE_REACHED:base2::25",
+      "type": "SET_MILESTONE_REACHED",
+      "set_id": "base2",
+      "timestamp": "2026-02-18T02:48:18.505975Z",
+      "details": {
+        "threshold": 25,
+        "completion_percentage": 25.0
+      }
+    }
+  ],
+  "pack_history": []
+}

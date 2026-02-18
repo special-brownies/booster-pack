@@ -1,0 +1,50 @@
+{
+  "illustrator": "Mitsuhiro Arita",
+  "rarity": "Rare",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=False, reverse=False, holo=True, firstEdition=False, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>, id='base4', name='Base Set 2', logo='https://assets.tcgdex.net/en/base/base4/logo', symbol='https://assets.tcgdex.net/univ/base/base4/symbol', cardCount=SetCardCountResume(total=130, official=130))",
+  "dexId": [
+    130
+  ],
+  "hp": 100,
+  "types": [
+    "Water"
+  ],
+  "evolveFrom": "Magikarp",
+  "description": null,
+  "level": null,
+  "stage": "Stage1",
+  "suffix": null,
+  "item": null,
+  "abilities": null,
+  "attacks": [
+    "CardAttack(name='Dragon Rage', cost=['Water', 'Water', 'Water'], effect=None, damage=50)",
+    "CardAttack(name='Bubblebeam', cost=['Water', 'Water', 'Water', 'Water'], effect='Flip a coin. If heads, Defending Pok\u00e9mon is now Paralyzed.', damage=40)"
+  ],
+  "weaknesses": [
+    "CardWeakRes(type='Grass', value='\u00d72')"
+  ],
+  "resistances": [
+    "CardWeakRes(type='Fighting', value='-30')"
+  ],
+  "retreat": null,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base4-7",
+  "localId": "7",
+  "name": "Gyarados",
+  "image": "https://assets.tcgdex.net/en/base/base4/7",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>",
+  "variant_details": {
+    "normal": false,
+    "reverse": false,
+    "holo": true,
+    "firstEdition": false,
+    "wPromo": false
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "illustrator": "Sumiyoshi Kizuki",
+  "rarity": "Common",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=True, reverse=False, holo=False, firstEdition=True, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>, id='base5', name='Team Rocket', logo='https://assets.tcgdex.net/en/base/base5/logo', symbol='https://assets.tcgdex.net/univ/base/base5/symbol', cardCount=SetCardCountResume(total=83, official=82))",
+  "dexId": [
+    50
+  ],
+  "hp": 40,
+  "types": [
+    "Fighting"
+  ],
+  "evolveFrom": null,
+  "description": null,
+  "level": null,
+  "stage": "Basic",
+  "suffix": null,
+  "item": null,
+  "abilities": null,
+  "attacks": [
+    "CardAttack(name='Dig Under', cost=['Fighting'], effect=\"Choose 1 of your opponent's Pok\u00e9mon. This attack does 10 damage to that Pok\u00e9mon. Don't apply Weakness and Resistance for this attack. (Any other effects that would happen after Applying Weakness and Resistance still happen.)\", damage=None)",
+    "CardAttack(name='Scratch', cost=['Fighting', 'Colorless'], effect=None, damage=20)"
+  ],
+  "weaknesses": [
+    "CardWeakRes(type='Grass', value='\u00d72')"
+  ],
+  "resistances": [
+    "CardWeakRes(type='Lightning', value='-30')"
+  ],
+  "retreat": null,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base5-52",
+  "localId": "52",
+  "name": "Diglett",
+  "image": "https://assets.tcgdex.net/en/base/base5/52",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>",
+  "variant_details": {
+    "normal": true,
+    "reverse": false,
+    "holo": false,
+    "firstEdition": true,
+    "wPromo": false
+  }
+}

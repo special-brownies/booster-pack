@@ -1,0 +1,49 @@
+{
+  "illustrator": "Mitsuhiro Arita",
+  "rarity": "Rare",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=True, reverse=False, holo=False, firstEdition=True, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>, id='base5', name='Team Rocket', logo='https://assets.tcgdex.net/en/base/base5/logo', symbol='https://assets.tcgdex.net/univ/base/base5/symbol', cardCount=SetCardCountResume(total=83, official=82))",
+  "dexId": [
+    80
+  ],
+  "hp": 60,
+  "types": [
+    "Psychic"
+  ],
+  "evolveFrom": "Slowpoke",
+  "description": null,
+  "level": null,
+  "stage": "Stage1",
+  "suffix": null,
+  "item": null,
+  "abilities": [
+    "CardAbility(type='Pokemon Power', name='Reel In', effect='When you play Dark Slowbro from your hand, choose up to 3 Basic Pok\u00e9mon and/or Evolution cards from your discard pile and put them into your hand.')"
+  ],
+  "attacks": [
+    "CardAttack(name='Fickle Attack', cost=['Psychic', 'Psychic'], effect='Flip a coin. If tails, this attack does nothing.', damage=40)"
+  ],
+  "weaknesses": [
+    "CardWeakRes(type='Psychic', value='\u00d72')"
+  ],
+  "resistances": null,
+  "retreat": null,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base5-29",
+  "localId": "29",
+  "name": "Dark Slowbro",
+  "image": "https://assets.tcgdex.net/en/base/base5/29",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>",
+  "variant_details": {
+    "normal": true,
+    "reverse": false,
+    "holo": false,
+    "firstEdition": true,
+    "wPromo": false
+  }
+}

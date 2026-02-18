@@ -1,0 +1,50 @@
+{
+  "illustrator": "Mitsuhiro Arita",
+  "rarity": "Uncommon",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=True, reverse=False, holo=False, firstEdition=True, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x00000202C2436120>, id='base2', name='Jungle', logo='https://assets.tcgdex.net/en/base/base2/logo', symbol='https://assets.tcgdex.net/univ/base/base2/symbol', cardCount=SetCardCountResume(total=64, official=64))",
+  "dexId": [
+    105
+  ],
+  "hp": 60,
+  "types": [
+    "Fighting"
+  ],
+  "evolveFrom": "Cubone",
+  "description": null,
+  "level": null,
+  "stage": "Stage1",
+  "suffix": null,
+  "item": null,
+  "abilities": null,
+  "attacks": [
+    "CardAttack(name='Bonemerang', cost=['Fighting', 'Fighting'], effect='Flip 2 coins. This attack does 30 damage times the number of heads.', damage='30x')",
+    "CardAttack(name='Call for Friend', cost=['Fighting', 'Fighting', 'Colorless'], effect=\"Search your deck for a Fighting Basic Pok\u00e9mon card and put it onto your Bench. Shuffle your deck afterward. (You can't use this attack if your Bench is full.)\", damage=None)"
+  ],
+  "weaknesses": [
+    "CardWeakRes(type='Grass', value='\u00d72')"
+  ],
+  "resistances": [
+    "CardWeakRes(type='Lightning', value='-30')"
+  ],
+  "retreat": null,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base2-39",
+  "localId": "39",
+  "name": "Marowak",
+  "image": "https://assets.tcgdex.net/en/base/base2/39",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x00000202C2436120>",
+  "variant_details": {
+    "normal": true,
+    "reverse": false,
+    "holo": false,
+    "firstEdition": true,
+    "wPromo": false
+  }
+}

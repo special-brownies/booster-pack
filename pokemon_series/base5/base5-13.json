@@ -1,0 +1,49 @@
+{
+  "illustrator": "Kagemaru Himeno",
+  "rarity": "Rare",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=False, reverse=False, holo=True, firstEdition=True, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>, id='base5', name='Team Rocket', logo='https://assets.tcgdex.net/en/base/base5/logo', symbol='https://assets.tcgdex.net/univ/base/base5/symbol', cardCount=SetCardCountResume(total=83, official=82))",
+  "dexId": [
+    45
+  ],
+  "hp": 60,
+  "types": [
+    "Grass"
+  ],
+  "evolveFrom": "Gloom",
+  "description": null,
+  "level": null,
+  "stage": "Stage2",
+  "suffix": null,
+  "item": null,
+  "abilities": [
+    "CardAbility(type='Pokemon Power', name='Hay Fever', effect='No Trainer cards can be played. This power stops working while Dark Vileplume is Asleep, Confused, or Paralyzed.')"
+  ],
+  "attacks": [
+    "CardAttack(name='Petal Whirlwind', cost=['Grass', 'Grass', 'Grass'], effect='Flip 3 coins. This attack does 30 damage times the number of heads. If you get 2 or more heads, Dark Vileplume is now Confused (after dealing damage).', damage='30x')"
+  ],
+  "weaknesses": [
+    "CardWeakRes(type='Fire', value='\u00d72')"
+  ],
+  "resistances": null,
+  "retreat": null,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base5-13",
+  "localId": "13",
+  "name": "Dark Vileplume",
+  "image": "https://assets.tcgdex.net/en/base/base5/13",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>",
+  "variant_details": {
+    "normal": false,
+    "reverse": false,
+    "holo": true,
+    "firstEdition": true,
+    "wPromo": false
+  }
+}

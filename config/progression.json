@@ -1,0 +1,6 @@
+{
+  "progression_order": ["base2", "jungle", "fossil", "base3", "base4", "base5"],
+  "track_partial_milestones": true,
+  "milestone_thresholds": [25, 50, 75, 100],
+  "maintain_pack_history": false
+}

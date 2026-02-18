@@ -1,0 +1,48 @@
+{
+  "illustrator": "Ken Sugimori",
+  "rarity": "Uncommon",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=True, reverse=False, holo=False, firstEdition=False, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>, id='base4', name='Base Set 2', logo='https://assets.tcgdex.net/en/base/base4/logo', symbol='https://assets.tcgdex.net/univ/base/base4/symbol', cardCount=SetCardCountResume(total=130, official=130))",
+  "dexId": [
+    67
+  ],
+  "hp": 80,
+  "types": [
+    "Fighting"
+  ],
+  "evolveFrom": "Machop",
+  "description": null,
+  "level": null,
+  "stage": "Stage1",
+  "suffix": null,
+  "item": null,
+  "abilities": null,
+  "attacks": [
+    "CardAttack(name='Karate Chop', cost=['Fighting', 'Fighting', 'Colorless'], effect='Does 50 damage minus 10 for each damage counter on Machoke.', damage=None)",
+    "CardAttack(name='Submission', cost=['Fighting', 'Fighting', 'Colorless', 'Colorless'], effect='Machoke does 20 damage to itself.', damage=60)"
+  ],
+  "weaknesses": [
+    "CardWeakRes(type='Psychic', value='\u00d72')"
+  ],
+  "resistances": null,
+  "retreat": null,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base4-49",
+  "localId": "49",
+  "name": "Machoke",
+  "image": "https://assets.tcgdex.net/en/base/base4/49",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>",
+  "variant_details": {
+    "normal": true,
+    "reverse": false,
+    "holo": false,
+    "firstEdition": false,
+    "wPromo": false
+  }
+}

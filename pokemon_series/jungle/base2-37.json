@@ -1,0 +1,48 @@
+{
+  "illustrator": "Keiji Kinebuchi",
+  "rarity": "Uncommon",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=True, reverse=False, holo=False, firstEdition=True, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x00000202C2436120>, id='base2', name='Jungle', logo='https://assets.tcgdex.net/en/base/base2/logo', symbol='https://assets.tcgdex.net/univ/base/base2/symbol', cardCount=SetCardCountResume(total=64, official=64))",
+  "dexId": [
+    44
+  ],
+  "hp": 60,
+  "types": [
+    "Grass"
+  ],
+  "evolveFrom": "Oddish",
+  "description": null,
+  "level": null,
+  "stage": "Stage1",
+  "suffix": null,
+  "item": null,
+  "abilities": null,
+  "attacks": [
+    "CardAttack(name='Poisonpowder', cost=['Grass'], effect='The Defending Pok\u00e9mon is now Poisoned.', damage=None)",
+    "CardAttack(name='Foul Odor', cost=['Grass', 'Grass'], effect='Both the Defending Pok\u00e9mon and Gloom are now Confused (after doing damage).', damage=20)"
+  ],
+  "weaknesses": [
+    "CardWeakRes(type='Fire', value='\u00d72')"
+  ],
+  "resistances": null,
+  "retreat": null,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base2-37",
+  "localId": "37",
+  "name": "Gloom",
+  "image": "https://assets.tcgdex.net/en/base/base2/37",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x00000202C2436120>",
+  "variant_details": {
+    "normal": true,
+    "reverse": false,
+    "holo": false,
+    "firstEdition": true,
+    "wPromo": false
+  }
+}

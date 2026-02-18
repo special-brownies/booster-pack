@@ -1,0 +1,48 @@
+{
+  "illustrator": "Kagemaru Himeno",
+  "rarity": "Common",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=True, reverse=False, holo=False, firstEdition=True, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>, id='base3', name='Fossil', logo='https://assets.tcgdex.net/en/base/base3/logo', symbol='https://assets.tcgdex.net/univ/base/base3/symbol', cardCount=SetCardCountResume(total=62, official=62))",
+  "dexId": [
+    54
+  ],
+  "hp": 50,
+  "types": [
+    "Water"
+  ],
+  "evolveFrom": null,
+  "description": null,
+  "level": null,
+  "stage": "Basic",
+  "suffix": null,
+  "item": null,
+  "abilities": null,
+  "attacks": [
+    "CardAttack(name='Headache', cost=['Psychic'], effect=\"Your opponent can't play Trainer cards during his or her next turn.\", damage=None)",
+    "CardAttack(name='Fury Swipes', cost=['Water'], effect='Flip 3 coins. This attack does 10 damage times the number of heads.', damage='10x')"
+  ],
+  "weaknesses": [
+    "CardWeakRes(type='Lightning', value='\u00d72')"
+  ],
+  "resistances": null,
+  "retreat": null,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base3-53",
+  "localId": "53",
+  "name": "Psyduck",
+  "image": "https://assets.tcgdex.net/en/base/base3/53",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>",
+  "variant_details": {
+    "normal": true,
+    "reverse": false,
+    "holo": false,
+    "firstEdition": true,
+    "wPromo": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "illustrator": "Keiji Kinebuchi",
+  "rarity": "Rare",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=True, reverse=False, holo=False, firstEdition=False, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>, id='base4', name='Base Set 2', logo='https://assets.tcgdex.net/en/base/base4/logo', symbol='https://assets.tcgdex.net/univ/base/base4/symbol', cardCount=SetCardCountResume(total=130, official=130))",
+  "dexId": [
+    101
+  ],
+  "hp": 80,
+  "types": [
+    "Lightning"
+  ],
+  "evolveFrom": "Voltorb",
+  "description": null,
+  "level": null,
+  "stage": "Stage1",
+  "suffix": null,
+  "item": null,
+  "abilities": [
+    "CardAbility(type='Poke-POWER', name='Buzzap', effect=\"At any time during your turn (before your attack) you may Knock Out Electrode and attach it to 1 of your other Pok\u00e9mon. If you do, choose a type of Energy. Electrode is now an Energy card of that type (instead of a Pok\u00e9mon) that provides 2 energy. This power can't be used if Electrode is Asleep, Confused, or Paralyzed.\")"
+  ],
+  "attacks": [
+    "CardAttack(name='Electric Shock', cost=['Lightning', 'Lightning', 'Lightning'], effect='Flip a coin. If tails, Electrode does 10 damage to itself.', damage=50)"
+  ],
+  "weaknesses": [
+    "CardWeakRes(type='Fighting', value='\u00d72')"
+  ],
+  "resistances": null,
+  "retreat": null,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base4-25",
+  "localId": "25",
+  "name": "Electrode",
+  "image": "https://assets.tcgdex.net/en/base/base4/25",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>",
+  "variant_details": {
+    "normal": true,
+    "reverse": false,
+    "holo": false,
+    "firstEdition": false,
+    "wPromo": false
+  }
+}

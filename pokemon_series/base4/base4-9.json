@@ -1,0 +1,48 @@
+{
+  "illustrator": "Keiji Kinebuchi",
+  "rarity": "Rare",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=False, reverse=False, holo=True, firstEdition=False, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>, id='base4', name='Base Set 2', logo='https://assets.tcgdex.net/en/base/base4/logo', symbol='https://assets.tcgdex.net/univ/base/base4/symbol', cardCount=SetCardCountResume(total=130, official=130))",
+  "dexId": [
+    82
+  ],
+  "hp": 60,
+  "types": [
+    "Lightning"
+  ],
+  "evolveFrom": "Magnemite",
+  "description": null,
+  "level": null,
+  "stage": "Stage1",
+  "suffix": null,
+  "item": null,
+  "abilities": null,
+  "attacks": [
+    "CardAttack(name='Thunder Wave', cost=['Lightning', 'Lightning', 'Colorless'], effect='Flip a coin. If heads, the Defending Pok\u00e9mon is now Paralyzed.', damage=30)",
+    "CardAttack(name='Selfdestruct', cost=['Lightning', 'Lightning', 'Colorless', 'Colorless'], effect=\"Does 20 damage to each Pok\u00e9mon on each player's Bench. (Don't apply Weakness and Resistance for Benched Pok\u00e9mon.) Magneton does 80 damage to itself.\", damage=80)"
+  ],
+  "weaknesses": [
+    "CardWeakRes(type='Fighting', value='\u00d72')"
+  ],
+  "resistances": null,
+  "retreat": null,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base4-9",
+  "localId": "9",
+  "name": "Magneton",
+  "image": "https://assets.tcgdex.net/en/base/base4/9",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>",
+  "variant_details": {
+    "normal": false,
+    "reverse": false,
+    "holo": true,
+    "firstEdition": false,
+    "wPromo": false
+  }
+}

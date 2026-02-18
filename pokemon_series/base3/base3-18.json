@@ -1,0 +1,49 @@
+{
+  "illustrator": "Keiji Kinebuchi",
+  "rarity": "Rare",
+  "category": "Pokemon",
+  "variants": "CardVariants(normal=True, reverse=False, holo=False, firstEdition=True, wPromo=False)",
+  "set": "SetResume(sdk=<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>, id='base3', name='Fossil', logo='https://assets.tcgdex.net/en/base/base3/logo', symbol='https://assets.tcgdex.net/univ/base/base3/symbol', cardCount=SetCardCountResume(total=62, official=62))",
+  "dexId": [
+    132
+  ],
+  "hp": 50,
+  "types": [
+    "Colorless"
+  ],
+  "evolveFrom": null,
+  "description": null,
+  "level": null,
+  "stage": "Basic",
+  "suffix": null,
+  "item": null,
+  "abilities": [
+    "CardAbility(type='Pokemon Power', name='Transform', effect=\"If Ditto is your Active Pok\u00e9mon, treat it as if it were the same card as the Defending Pok\u00e9mon, including type, Hit Points, Weakness, and so on, except Ditto can't evolve, always has this Pok\u00e9mon Power, and you may treat any Energy attached to Ditto as Energy of any type. Ditto isn't a copy of any other Pok\u00e9mon while Ditto is Asleep, Confused, or Paralyzed.\")"
+  ],
+  "attacks": null,
+  "weaknesses": [
+    "CardWeakRes(type='Fighting', value='\u00d72')"
+  ],
+  "resistances": [
+    "CardWeakRes(type='Psychic', value='-30')"
+  ],
+  "retreat": null,
+  "effect": null,
+  "trainerType": null,
+  "energyType": null,
+  "regulationMark": null,
+  "legal": "Legal(standard=False, expanded=False)",
+  "id": "base3-18",
+  "localId": "18",
+  "name": "Ditto",
+  "image": "https://assets.tcgdex.net/en/base/base3/18",
+  "boosters": null,
+  "sdk": "<tcgdexsdk.tcgdex.TCGdex object at 0x000001BC280DA120>",
+  "variant_details": {
+    "normal": true,
+    "reverse": false,
+    "holo": false,
+    "firstEdition": true,
+    "wPromo": false
+  }
+}

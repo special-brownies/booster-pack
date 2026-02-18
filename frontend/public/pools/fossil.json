@@ -1,0 +1,101 @@
+{
+  "set_id": "fossil",
+  "generated_at_utc": "2026-02-18T02:01:32.378896+00:00",
+  "source_dir": "pokemon_series/fossil",
+  "assumptions": {
+    "holo_rule": "variant_details.holo == true, else rarity text contains 'holo'",
+    "include_categories": "all",
+    "duplicate_policy": "allowed_within_pack",
+    "pack_template": {
+      "rare_or_holo": 1,
+      "uncommon": 3,
+      "common": 5
+    }
+  },
+  "counts": {
+    "total_cards_scanned": 62,
+    "common": 16,
+    "uncommon": 16,
+    "rare": 15,
+    "holo": 15,
+    "unclassified": 0,
+    "parse_errors": 0
+  },
+  "pools": {
+    "common": [
+      "base3-46",
+      "base3-47",
+      "base3-48",
+      "base3-49",
+      "base3-50",
+      "base3-51",
+      "base3-52",
+      "base3-53",
+      "base3-54",
+      "base3-55",
+      "base3-56",
+      "base3-57",
+      "base3-59",
+      "base3-60",
+      "base3-61",
+      "base3-62"
+    ],
+    "uncommon": [
+      "base3-31",
+      "base3-32",
+      "base3-33",
+      "base3-34",
+      "base3-35",
+      "base3-36",
+      "base3-37",
+      "base3-38",
+      "base3-39",
+      "base3-40",
+      "base3-41",
+      "base3-42",
+      "base3-43",
+      "base3-44",
+      "base3-45",
+      "base3-58"
+    ],
+    "rare": [
+      "base3-16",
+      "base3-17",
+      "base3-18",
+      "base3-19",
+      "base3-20",
+      "base3-21",
+      "base3-22",
+      "base3-23",
+      "base3-24",
+      "base3-25",
+      "base3-26",
+      "base3-27",
+      "base3-28",
+      "base3-29",
+      "base3-30"
+    ],
+    "holo": [
+      "base3-1",
+      "base3-10",
+      "base3-11",
+      "base3-12",
+      "base3-13",
+      "base3-14",
+      "base3-15",
+      "base3-2",
+      "base3-3",
+      "base3-4",
+      "base3-5",
+      "base3-6",
+      "base3-7",
+      "base3-8",
+      "base3-9"
+    ]
+  },
+  "anomalies": {
+    "missing_rarity": [],
+    "unclassified_rarity": [],
+    "parse_errors": []
+  }
+}
