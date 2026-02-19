@@ -6,10 +6,11 @@ import {
   GlobalProgress,
   OpenPackRequest,
   PackResult,
+  ResetProgressResponse,
   SetCatalog
 } from "@/lib/api/types";
+import { buildApiUrl } from "@/lib/config/api-base-url";
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL ?? "";
 const DEFAULT_RETRIES = 2;
 const RETRYABLE_STATUS = new Set([408, 425, 429, 500, 502, 503, 504]);
 
@@ -23,13 +24,6 @@ export class ApiError extends Error {
     this.status = status;
     this.payload = payload;
   }
-}
-
-function withBase(path: string): string {
-  if (!API_BASE_URL) {
-    return path;
-  }
-  return `${API_BASE_URL}${path}`;
 }
 
 async function sleep(ms: number): Promise<void> {
@@ -54,7 +48,7 @@ async function fetchWithRetry<T>(
 
   while (attempt <= retries) {
     try {
-      const response = await fetch(withBase(path), {
+      const response = await fetch(buildApiUrl(path), {
         ...init,
         headers: {
           "Content-Type": "application/json",
@@ -114,6 +108,12 @@ export const apiClient = {
     fetchWithRetry<BinderUpdateSummary>("/api/add-cards-to-binder", {
       method: "POST",
       body: JSON.stringify({ packResult })
+    }),
+
+  resetProgress: async (): Promise<ResetProgressResponse> =>
+    fetchWithRetry<ResetProgressResponse>("/api/reset-progress", {
+      method: "POST",
+      body: JSON.stringify({})
     }),
 
   getCollectionProgress: async (setId: string): Promise<CollectionProgress> =>

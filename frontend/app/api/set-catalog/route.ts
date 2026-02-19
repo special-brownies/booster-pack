@@ -3,5 +3,5 @@ import { proxyToBackend } from "@/app/api/_backend";
 
 export async function GET(request: NextRequest) {
   const query = request.nextUrl.searchParams;
-  return proxyToBackend({ path: ["/getSetCatalog", "/set-catalog"], method: "GET", query });
+  return proxyToBackend({ path: ["/api/set-catalog", "/set-catalog", "/getSetCatalog"], method: "GET", query });
 }

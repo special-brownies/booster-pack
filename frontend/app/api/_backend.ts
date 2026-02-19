@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
+import { API_BASE_URL } from "@/lib/config/api-base-url";
 
-const BACKEND_BASE =
-  process.env.BACKEND_API_BASE_URL ?? process.env.NEXT_PUBLIC_API_BASE_URL ?? "";
+const BACKEND_BASE = API_BASE_URL;
 
 type ProxyOptions = {
   path: string | string[];
@@ -14,8 +14,7 @@ export async function proxyToBackend({ path, method = "GET", body, query }: Prox
   if (!BACKEND_BASE) {
     return NextResponse.json(
       {
-        error:
-          "Backend API base URL is not configured. Set BACKEND_API_BASE_URL or NEXT_PUBLIC_API_BASE_URL."
+        error: "Backend API base URL is not configured."
       },
       { status: 503 }
     );

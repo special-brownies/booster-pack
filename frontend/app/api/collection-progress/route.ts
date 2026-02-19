@@ -4,7 +4,7 @@ import { proxyToBackend } from "@/app/api/_backend";
 export async function GET(request: NextRequest) {
   const query = request.nextUrl.searchParams;
   return proxyToBackend({
-    path: ["/getCollectionProgress", "/collection-progress"],
+    path: ["/api/collection-progress", "/collection-progress", "/getCollectionProgress"],
     method: "GET",
     query
   });

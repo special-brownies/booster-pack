@@ -3,5 +3,5 @@ import { proxyToBackend } from "@/app/api/_backend";
 
 export async function POST(request: NextRequest) {
   const body = await request.json();
-  return proxyToBackend({ path: ["/openPack", "/open-pack"], method: "POST", body });
+  return proxyToBackend({ path: ["/api/open-pack", "/open-pack", "/openPack"], method: "POST", body });
 }
