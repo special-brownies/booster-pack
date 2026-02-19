@@ -129,6 +129,7 @@ function reducer(state: AppState, action: AppAction): AppState {
     case "OPEN_PACK_START":
       return {
         ...state,
+        lastOpenedPack: null,
         ui: {
           ...state.ui,
           errorMessage: null,

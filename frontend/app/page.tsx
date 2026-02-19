@@ -29,7 +29,11 @@ export default function HomePage() {
     <main className={clsx("page page-home", state.ui.animationState === "tearing" && "anim-tearing")}>
       <DashboardSummary />
       <PackSelectionBoard onOpenPack={onOpenPack} />
-      <PackRevealStage pack={state.lastOpenedPack} onRevealComplete={applyBinderUpdateAfterReveal} />
+      <PackRevealStage
+        pack={state.lastOpenedPack}
+        onRevealComplete={applyBinderUpdateAfterReveal}
+        onOpenAnotherPack={onOpenPack}
+      />
     </main>
   );
 }

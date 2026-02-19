@@ -47,9 +47,10 @@ type Params = {
   mode: RevealMode;
   autoDelayMs: number;
   onAllRevealed: () => Promise<void> | void;
+  resetKey?: unknown;
 };
 
-export function useRevealController({ totalCards, mode, autoDelayMs, onAllRevealed }: Params) {
+export function useRevealController({ totalCards, mode, autoDelayMs, onAllRevealed, resetKey }: Params) {
   const [state, dispatch] = useReducer(reducer, { index: -1, phase: "idle" });
   const completedRef = useRef(false);
 
@@ -60,7 +61,7 @@ export function useRevealController({ totalCards, mode, autoDelayMs, onAllReveal
 
   useEffect(() => {
     reset();
-  }, [totalCards, reset]);
+  }, [reset, totalCards, resetKey]);
 
   const revealNext = useCallback(() => {
     dispatch({ type: "ADVANCE", totalCards });
@@ -102,4 +103,3 @@ export function useRevealController({ totalCards, mode, autoDelayMs, onAllReveal
     reset
   };
 }
-

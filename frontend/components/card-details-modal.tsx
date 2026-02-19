@@ -90,7 +90,6 @@ export function CardDetailsModal({ setId, slot, onClose }: Props) {
             <span className={`chip ${collectionBadgeClass}`}>
               {collectionBadge}
             </span>
-            {details?.source && <span className="chip chip--mute">Source: {details.source}</span>}
           </div>
 
           {isLoading && <p className="empty-state">Loading Pokemon details...</p>}

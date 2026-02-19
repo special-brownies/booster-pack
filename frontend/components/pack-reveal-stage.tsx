@@ -14,9 +14,10 @@ import { getRarityGlowClass } from "@/lib/utils/rarity";
 type Props = {
   pack: PackResult | null;
   onRevealComplete: () => Promise<void>;
+  onOpenAnotherPack: () => Promise<void> | void;
 };
 
-export function PackRevealStage({ pack, onRevealComplete }: Props) {
+export function PackRevealStage({ pack, onRevealComplete, onOpenAnotherPack }: Props) {
   const { state } = useAppState();
   const { playCardFlip, playCelebrate } = useSfx();
   const [mode, setMode] = useState<RevealMode>("manual");
@@ -41,7 +42,8 @@ export function PackRevealStage({ pack, onRevealComplete }: Props) {
     totalCards: total,
     mode,
     autoDelayMs,
-    onAllRevealed: handleAllRevealed
+    onAllRevealed: handleAllRevealed,
+    resetKey: pack
   });
 
   const visible = useMemo(() => slots.slice(0, controller.visibleCount), [controller.visibleCount, slots]);
@@ -154,19 +156,24 @@ export function PackRevealStage({ pack, onRevealComplete }: Props) {
       <CardDetailsModal setId={setId} slot={zoomedSlot} onClose={() => setZoomedSlotIndex(null)} />
 
       <div className="reveal-stage__actions">
-        <button
-          className="btn btn--primary"
-          onClick={handleNext}
-          disabled={!controller.canAdvance || state.ui.isUpdatingBinder}
-        >
-          {controller.isComplete
-            ? state.ui.isUpdatingBinder
-              ? "Syncing..."
-              : "Pack Synced"
-            : controller.currentIndex < 0
-              ? "Start Reveal"
-              : "Flip Next Card"}
-        </button>
+        {!controller.isComplete && (
+          <button
+            className="btn btn--primary"
+            onClick={handleNext}
+            disabled={!controller.canAdvance || state.ui.isUpdatingBinder}
+          >
+            {controller.currentIndex < 0 ? "Start Reveal" : "Flip Next Card"}
+          </button>
+        )}
+        {controller.isComplete && (
+          <button
+            className="btn btn--primary"
+            onClick={() => void onOpenAnotherPack()}
+            disabled={state.ui.isOpeningPack || state.ui.isUpdatingBinder}
+          >
+            {state.ui.isUpdatingBinder ? "Syncing..." : "Open Another Pack"}
+          </button>
+        )}
       </div>
     </section>
   );
