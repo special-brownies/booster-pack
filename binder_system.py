@@ -552,6 +552,19 @@ class BinderService:
     def get_binder_state(self) -> dict[str, Any]:
         return copy.deepcopy(self.state)
 
+    def reset_binder(self) -> dict[str, Any]:
+        LOGGER.info("binder_reset=started")
+        self.state = self._validate_or_initialize_state({})
+        self._rebuild_indexes()
+        self._ensure_initial_unlock()
+        self._persist()
+        unlocked_sets = self.get_unlocked_sets()
+        LOGGER.info("binder_reset=completed unlocked_sets=%s", unlocked_sets)
+        return {
+            "status": "ok",
+            "unlocked_sets": unlocked_sets,
+        }
+
 
 def create_default_binder_service(
     *,

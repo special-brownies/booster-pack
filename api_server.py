@@ -247,7 +247,18 @@ def get_card_image(set_id: str, card_id: str):
     image_path = _resolve_card_image_path(set_id, card_id)
     if not image_path.exists():
         raise HTTPException(status_code=404, detail="Image not found")
-    return FileResponse(str(image_path), media_type="image/png")
+    return FileResponse(
+        str(image_path),
+        media_type="image/png",
+        headers={"Cache-Control": "public, max-age=31536000, immutable"},
+    )
+
+
+@api.post("/reset-progress")
+def reset_progress_endpoint():
+    LOGGER.info("reset_progress=requested")
+    with _binder_lock:
+        return _binder_service.reset_binder()
 
 
 app.include_router(api)
