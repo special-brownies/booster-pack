@@ -10,7 +10,7 @@ export function LoadingOverlay() {
     <div className="loading-overlay" role="status" aria-live="assertive">
       <div className="loading-overlay__panel">
         {state.ui.isHydrating && "Syncing collection..."}
-        {state.ui.isOpeningPack && "Tearing booster pack..."}
+        {state.ui.isOpeningPack && "Loading pack..."}
         {state.ui.isUpdatingBinder && "Saving binder progress..."}
       </div>
     </div>

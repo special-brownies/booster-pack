@@ -75,6 +75,7 @@ type AppAction =
     }
   | { type: "BINDER_UPDATE_ERROR"; payload: string }
   | { type: "CACHE_SET_CATALOG"; payload: { setId: string; cards: SetCatalog["cards"] } }
+  | { type: "RESET_PROGRESS_LOCAL" }
   | { type: "DISMISS_CELEBRATION" }
   | { type: "SET_REDUCED_MOTION"; payload: boolean };
 
@@ -224,6 +225,26 @@ function reducer(state: AppState, action: AppAction): AppState {
             loadedAt: new Date().toISOString(),
             cards: action.payload.cards
           }
+        }
+      };
+    case "RESET_PROGRESS_LOCAL":
+      return {
+        ...state,
+        selectedSet: DEFAULT_SET_ORDER[0],
+        unlockedSets: [DEFAULT_SET_ORDER[0]],
+        globalProgress: null,
+        setProgressMap: {},
+        lastOpenedPack: null,
+        binderCache: {},
+        ui: {
+          ...state.ui,
+          isOpeningPack: false,
+          isUpdatingBinder: false,
+          isRevealing: false,
+          revealStep: -1,
+          animationState: "idle",
+          errorMessage: null,
+          celebration: null
         }
       };
     case "DISMISS_CELEBRATION":

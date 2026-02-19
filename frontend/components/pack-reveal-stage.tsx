@@ -9,18 +9,12 @@ import { useSfx } from "@/lib/hooks/use-sfx";
 import { CardImage } from "@/components/card-image";
 import { RevealMode, useRevealController } from "@/lib/hooks/use-reveal-controller";
 import { CardDetailsModal } from "@/components/card-details-modal";
+import { getRarityGlowClass } from "@/lib/utils/rarity";
 
 type Props = {
   pack: PackResult | null;
   onRevealComplete: () => Promise<void>;
 };
-
-function rarityClass(rarity: string): string {
-  if (rarity === "holo") return "rarity-holo";
-  if (rarity === "rare") return "rarity-rare";
-  if (rarity === "uncommon") return "rarity-uncommon";
-  return "rarity-common";
-}
 
 export function PackRevealStage({ pack, onRevealComplete }: Props) {
   const { state } = useAppState();
@@ -118,7 +112,7 @@ export function PackRevealStage({ pack, onRevealComplete }: Props) {
               animate={state.reducedMotion ? { opacity: 1 } : { opacity: 1, y: 0, rotateY: 0 }}
               exit={state.reducedMotion ? { opacity: 0 } : { opacity: 0, y: -12 }}
               transition={{ duration: state.reducedMotion ? 0.1 : 0.35 }}
-              className={clsx("card-tile", rarityClass(slot.rarity))}
+              className={clsx("card-tile", getRarityGlowClass(slot.rarity))}
               onAnimationComplete={() => {
                 const logicalIndex = slot.slot_index - 1;
                 if (logicalIndex === controller.currentIndex) {

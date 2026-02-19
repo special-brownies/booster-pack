@@ -80,6 +80,8 @@ a {
   border-radius: 999px;
   color: var(--text-muted);
   border: 1px solid transparent;
+  background: transparent;
+  font: inherit;
   transition: 0.2s ease;
 }
 
@@ -88,6 +90,22 @@ a {
   color: var(--text-main);
   border-color: var(--line);
   background: rgba(255, 255, 255, 0.06);
+}
+
+.nav-link:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.nav-link--danger {
+  color: #ffb3b3;
+  border-color: rgba(255, 107, 107, 0.35);
+}
+
+.nav-link--danger:hover:not(:disabled) {
+  color: #ffd2d2;
+  border-color: rgba(255, 107, 107, 0.7);
+  background: rgba(255, 107, 107, 0.12);
 }
 
 .page {
@@ -338,11 +356,100 @@ a {
 
 .card-tile__image,
 .binder-card__image,
+.card-modal__image,
+.card-image-shell {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
 .card-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: opacity 0.2s ease;
+}
+
+.card-image--loading {
+  opacity: 0;
+}
+
+.card-image-skeleton {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    110deg,
+    rgba(34, 52, 83, 0.65) 8%,
+    rgba(74, 103, 150, 0.65) 18%,
+    rgba(34, 52, 83, 0.65) 33%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.2s linear infinite;
+}
+
+.card-image-shell.rarity-glow-uncommon,
+.card-image-shell.rarity-glow-rare,
+.card-image-shell.rarity-glow-holo {
+  border: 1px solid transparent;
+}
+
+.card-image-shell.rarity-glow-uncommon {
+  box-shadow: inset 0 0 0 1px rgba(97, 218, 251, 0.45);
+}
+
+.card-image-shell.rarity-glow-rare {
+  box-shadow: inset 0 0 0 1px rgba(255, 159, 67, 0.6), 0 0 14px rgba(255, 159, 67, 0.22);
+}
+
+.card-image-shell.rarity-glow-holo {
+  box-shadow: inset 0 0 0 1px rgba(245, 215, 110, 0.72), 0 0 18px rgba(245, 215, 110, 0.3);
+  animation: holo-glow 2.8s ease-in-out infinite;
+}
+
+.rarity-glow-common {
+  border-color: var(--line);
+}
+
+.rarity-glow-uncommon {
+  border-color: rgba(97, 218, 251, 0.62);
+  box-shadow: 0 0 0 1px rgba(97, 218, 251, 0.18);
+}
+
+.rarity-glow-rare {
+  border-color: rgba(255, 159, 67, 0.72);
+  box-shadow: 0 0 0 1px rgba(255, 159, 67, 0.25), 0 0 14px rgba(255, 159, 67, 0.22);
+}
+
+.rarity-glow-holo {
+  border-color: rgba(245, 215, 110, 0.82);
+  box-shadow: 0 0 0 1px rgba(245, 215, 110, 0.33), 0 0 22px rgba(245, 215, 110, 0.3);
+}
+
+.card-image-shell.rarity-glow-holo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.22) 44%,
+    rgba(255, 255, 255, 0) 72%
+  );
+  transform: translateX(-130%);
+  animation: holo-sheen 3.2s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.card-tile__image,
+.binder-card__image,
+.card-image-shell,
+.card-image {
+  width: 100%;
+  height: 100%;
 }
 
 .card-fallback {
@@ -408,19 +515,6 @@ a {
     border-color: rgba(97, 218, 251, 0.55);
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3), 0 0 18px rgba(97, 218, 251, 0.2);
   }
-}
-
-.rarity-holo {
-  border-color: #f5d76e;
-  box-shadow: 0 0 0 1px rgba(245, 215, 110, 0.3), 0 0 20px rgba(245, 215, 110, 0.3);
-}
-
-.rarity-rare {
-  border-color: #ff9f43;
-}
-
-.rarity-uncommon {
-  border-color: #61dafb;
 }
 
 .reveal-stage__actions {
@@ -793,6 +887,36 @@ a {
   to {
     transform: translateY(-4px);
     opacity: 1;
+  }
+}
+
+@keyframes skeleton-shimmer {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes holo-glow {
+  0%,
+  100% {
+    box-shadow: inset 0 0 0 1px rgba(245, 215, 110, 0.72), 0 0 16px rgba(245, 215, 110, 0.24);
+  }
+  50% {
+    box-shadow: inset 0 0 0 1px rgba(245, 215, 110, 0.8), 0 0 22px rgba(245, 215, 110, 0.34);
+  }
+}
+
+@keyframes holo-sheen {
+  0%,
+  30% {
+    transform: translateX(-130%);
+  }
+  60%,
+  100% {
+    transform: translateX(130%);
   }
 }
 

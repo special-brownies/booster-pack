@@ -31,3 +31,11 @@ export function loadSnapshot(): FrontendSnapshot | null {
   }
 }
 
+export function clearSnapshot(): void {
+  if (typeof window === "undefined") return;
+  try {
+    window.localStorage.removeItem(SNAPSHOT_KEY);
+  } catch {
+    // Ignore local storage failures.
+  }
+}

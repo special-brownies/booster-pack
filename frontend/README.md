@@ -28,14 +28,16 @@ NEXT_PUBLIC_AUTO_REVEAL_DELAY_MS=700
 
 ## Required Backend Endpoints
 
-- `POST /open-pack`
-- `POST /add-cards-to-binder`
-- `GET /collection-progress?setId=...`
-- `GET /global-progress`
-- `GET /unlocked-sets`
-- `GET /binder-state`
-- `GET /set-catalog?setId=...`
-- `GET /card-metadata?setId=...&cardId=...`
+- `POST /api/open-pack`
+- `POST /api/add-cards-to-binder`
+- `POST /api/reset-progress`
+- `GET /api/collection-progress?setId=...`
+- `GET /api/global-progress`
+- `GET /api/unlocked-sets`
+- `GET /api/binder-state`
+- `GET /api/set-catalog?setId=...`
+- `GET /api/card-metadata?setId=...&cardId=...`
 - `GET /api/cards/:setId/:cardId.png`
 
 The app calls these via `frontend/lib/api/client.ts`.
+Set `NEXT_PUBLIC_API_BASE_URL` to the backend origin (for example `https://your-backend.up.railway.app`).

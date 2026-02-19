@@ -53,6 +53,11 @@ export type BinderUpdateSummary = {
   newly_unlocked_sets: string[];
 };
 
+export type ResetProgressResponse = {
+  status: "ok";
+  unlocked_sets: string[];
+};
+
 export type CollectionProgress = {
   set_id: string;
   owned_unique: number;

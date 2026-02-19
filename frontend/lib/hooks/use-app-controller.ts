@@ -4,8 +4,10 @@ import { useCallback } from "react";
 import { apiClient, ApiError } from "@/lib/api/client";
 import { useAppState } from "@/lib/state/app-state";
 import { CollectionProgress, PackConfig } from "@/lib/api/types";
-import { loadSnapshot, saveSnapshot } from "@/lib/utils/local-cache";
+import { clearSnapshot, loadSnapshot, saveSnapshot } from "@/lib/utils/local-cache";
 import { getSetDisplayName } from "@/lib/utils/set-labels";
+import { buildCardImageUrl } from "@/lib/utils/cards";
+import { preloadImages } from "@/lib/utils/image-preload";
 
 function toSetProgressMap(
   unlockedSets: string[],
@@ -83,11 +85,8 @@ export function useAppController() {
             `Invalid pack size from backend: expected 10, got ${result.slots?.length ?? "unknown"}`
           );
         }
-        console.info("[Pack] payload validated", {
-          setId: result.set_id,
-          totalCards: result.summary?.total_cards,
-          revealedRange: "0 -> 9"
-        });
+        const packImageUrls = result.slots.map((slot) => buildCardImageUrl(result.set_id, slot.card_id));
+        await preloadImages(packImageUrls, { timeoutMs: 7000 });
         dispatch({ type: "OPEN_PACK_SUCCESS", payload: result });
       } catch (error) {
         const message =
@@ -216,10 +215,18 @@ export function useAppController() {
     [dispatch, state.binderCache]
   );
 
+  const resetProgressFlow = useCallback(async () => {
+    await apiClient.resetProgress();
+    clearSnapshot();
+    dispatch({ type: "RESET_PROGRESS_LOCAL" });
+    await hydrate();
+  }, [dispatch, hydrate]);
+
   return {
     hydrate,
     openPackFlow,
     applyBinderUpdateAfterReveal,
-    hydrateSetCatalog
+    hydrateSetCatalog,
+    resetProgressFlow
   };
 }

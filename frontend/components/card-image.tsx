@@ -2,7 +2,8 @@
 
 import clsx from "clsx";
 import { useEffect, useState } from "react";
-import { getCardImageUrl } from "@/lib/utils/cards";
+import { buildCardImageUrl } from "@/lib/utils/cards";
+import { getRarityGlowClass } from "@/lib/utils/rarity";
 
 type Props = {
   setId: string;
@@ -23,16 +24,14 @@ export function CardImage({
   className,
   hideCardId = false
 }: Props) {
-  const src = getCardImageUrl(setId, cardId);
-  const [missing, setMissing] = useState(false);
+  const src = buildCardImageUrl(setId, cardId);
+  const [status, setStatus] = useState<"loading" | "loaded" | "error">("loading");
 
   useEffect(() => {
-    setMissing(false);
-    // Required diagnostic log for local path resolution.
-    console.info("[CardImage] resolved", { setId, cardId, src });
+    setStatus("loading");
   }, [setId, cardId, src]);
 
-  if (missing) {
+  if (status === "error") {
     return (
       <div className={clsx("card-fallback", className)} role="img" aria-label={`${cardId} fallback`}>
         <p className="card-fallback__name">{cardName || cardId}</p>
@@ -48,15 +47,16 @@ export function CardImage({
   }
 
   return (
-    <img
-      className={clsx("card-image", className)}
-      src={src}
-      alt={cardName || cardId}
-      loading="lazy"
-      onError={() => {
-        console.warn("[CardImage] missing image fallback", { setId, cardId, src });
-        setMissing(true);
-      }}
-    />
+    <div className={clsx("card-image-shell", className, getRarityGlowClass(rarity))}>
+      {status !== "loaded" && <div className="card-image-skeleton" aria-hidden="true" />}
+      <img
+        className={clsx("card-image", status !== "loaded" && "card-image--loading")}
+        src={src}
+        alt={cardName || cardId}
+        loading="lazy"
+        onLoad={() => setStatus("loaded")}
+        onError={() => setStatus("error")}
+      />
+    </div>
   );
 }

@@ -2,6 +2,7 @@
 
 import clsx from "clsx";
 import { CardImage } from "@/components/card-image";
+import { getRarityGlowClass } from "@/lib/utils/rarity";
 
 export type BinderCardRow = {
   card_id: string;
@@ -30,6 +31,7 @@ export function BinderGrid({
           key={`${row.set_id}-${row.card_id}`}
           className={clsx(
             "binder-card",
+            getRarityGlowClass(row.rarity),
             row.owned ? "binder-card--interactive" : "binder-card--missing"
           )}
         >
