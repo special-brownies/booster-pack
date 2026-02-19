@@ -135,8 +135,7 @@ For future systems:
 `frontend/.env.example`:
 
 - `BACKEND_API_BASE_URL`: backend API origin used by Next API proxy routes
-- `NEXT_PUBLIC_API_BASE_URL`: optional direct client API base (keep empty to use proxy)
-- `NEXT_PUBLIC_CARD_IMAGE_BASE_URL`: image base URL for card assets
+- `NEXT_PUBLIC_API_BASE_URL`: direct client API origin (used by card image URLs and API client)
 - `NEXT_PUBLIC_AUTO_REVEAL_DELAY_MS`: auto reveal delay in milliseconds
 
 Card image source:

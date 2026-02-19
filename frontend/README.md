@@ -22,7 +22,7 @@ Recommended `.env.local`:
 
 ```env
 BACKEND_API_BASE_URL=http://localhost:8000
-NEXT_PUBLIC_CARD_IMAGE_BASE_URL=http://localhost:8000/api/cards
+NEXT_PUBLIC_API_BASE_URL=http://localhost:8000
 NEXT_PUBLIC_AUTO_REVEAL_DELAY_MS=700
 ```
 
